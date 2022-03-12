@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pure Fitness | Gym | Bristol</title> 
 
-    <!-- StyleSheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pure Fitness | Gym | Bristol</title>
+
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/CSS/style.css" type="text/css" >
+  <link rel="stylesheet" href="../assets/CSS/style.css" type="text/css">
 
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/db72c0b092.js" crossorigin="anonymous"></script>
-    
-	  <!-- description and keywords -->
-    <meta name="description" content="Pure Fitness, independent gym located in Bristol, serving all levels of fitness">
-    <meta name="keywords" content="gym, fitness, classes, Bristol, weights, exercise">
-  </head>
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/db72c0b092.js" crossorigin="anonymous"></script>
 
-    <body>
-    <header>
-      <div class="container" id="header" name="header">
-        <div class="row" id="header" name="header">
-          <div class="col-2 align-items-center">
-            <a href="index.html" target="_self" id="header-logo" alt="Pure fitness logo" >
-              <i class="fa-solid fa-dumbbell fa-2xl"></i> 
-            </a>
-          </div>
-          <div class="col-5">
-            <h1 id="header-name">Pure Fitness
-              <h3 id="tag-line">Bristols best independent gym</h3>
-            </h1>
-            
-          </div>
-          <div class="col-5">
-            <ul id="links">
-              <li><a href="#" target="_self" id="" alt="Pure fitness logo" >
-                about
-              </a>
-            </li>
-          <li>
-              <a href="#" target="_self" id="" alt="Pure fitness logo" >
-                gallery
-              </a>
-            </li>
-          <li>
-              <a href="#" target="_self" id="" alt="Pure fitness logo" >
-                contact
-              </a>
-            </li>
-            </ul>
+  <!-- description and keywords -->
+  <meta name="description" content="Pure Fitness, independent gym located in Bristol, serving all levels of fitness">
+  <meta name="keywords" content="gym, fitness, classes, Bristol, weights, exercise">
+</head>
+
+<body>
+  <header>
+    <div class="row px-3 align-items-center justify-content-center" id="header" name="header">
+      <div class="col-4 text-left">
+        <a href="index.html" target="_self" id="header-logo" alt="Pure fitness logo">
+          <i class="fa-solid fa-dumbbell fa-2xl text-black"></i>
+        </a>
+      </div>
+      <div class="col-4 text-center">
+        <a href="index.html" class="text-decoration-none text-black text-center" target="_self" id="header-logo"
+          alt="Pure fitness logo">
+          <h1 class="text-uppercase" id="header-name">Pure Fitness</h1>
+          <h4 id="tag-line">Bristols best independent gym</h4>
+        </a>
+      </div>
+      <div class="col-4">
+        <ul class="nav justify-content-end" id="nav">
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="g-3 gx-5">
+    </div>
+  </header>
+  <div class="row container">
+    <div class="col-12">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="align-items-center justify-content-center">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
-        <hr>
       </div>
-    </header>
-    
-    <section>
-    
-    </section>
-      <footer>
+    </div>
+  </div>
+  </section>
+  <footer>
 
-      </footer>
-    </section>
-  </body>
-  </html>
+  </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
