@@ -46,7 +46,7 @@
             <a class="nav-link text-black" href="#">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="nav-link text-black" href="#contactModal" data-bs-toggle="modal" data-bs-target="#contactModal">
               Contact</a>
           </li>
         </ul>
@@ -54,36 +54,117 @@
       <hr class="g-3 gx-5">
     </div>
   </header>
-  <div class="row container">
-    <div class="col-12">
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="row align-items-center container">
+    <!-- Carousel structure from Amanda Bilderback (@abilderback) on codepen adapted for this website -->
+    <div class="col-sm-10 ml-auto mr-auto text-center align-items-center justify-content-center">
+      <section id="home-reviews">
+        <h3>See what our happy customers say...</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                Great class, I will definitely be feeling the burn tomorrow morning.
+                I would highly recommend you try it!<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+              <p class="review-name">Lindsay</p>
+              <div class="stars">
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="modal-body">
-              <form class="align-items-center justify-content-center">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
+            <div class="carousel-item">
+              <p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                I have always had a great experience working with YESCO. that business relationship started over 15
+                years ago in Las Vegas and as I have lived in Twin Falls Idaho I have always recommended that we have
+                YESCO do the our sign work. now that I am in Utah I will always recommend we use YESCO.<i
+                  class="fa fa-quote-right" aria-hidden="true"></i>
+              </p>
+              <p class="review-name">Jeremy at Sykes Enterprises, Inc.</p>
+              <div class="stars">
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="carousel-item">
+              <p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                The office signs look great.<i class="fa fa-quote-right" aria-hidden="true"></i>
+              </p>
+              <p class="review-name">Matthew at Enterprise Rent A Car</p>
+              <div class="stars">
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+              </div>
+
             </div>
+            <div class="carousel-item">
+              <p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                Your tech is outstanding.<i class="fa fa-quote-right" aria-hidden="true"></i>
+              </p>
+              <p class="review-name">Ted at Fall River Enterprises, Inc.</p>
+              <div class="stars">
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                very professional and courteous.<i class="fa fa-quote-right" aria-hidden="true"></i>
+              </p>
+              <p class="review-name">Valued Customer at FedEx Ground</p>
+              <div class="stars">
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal - structure from boot strap docs -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Contact us below</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="align-items-center justify-content-center">
+              <div class="mb-3">
+                <label for="email-address" class="form-label">Enter email address</label>
+                <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="name-entry" class="form-label">Enter Name</label>
+                <input type="text" class="form-control" id="name-entry"></input>
+              </div>
+              <div class="mb-3">
+                <label for="enquiry-text" class="form-label">Enter your enquiry below</label>
+                <textarea class="form-control" id="enquiry-text" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary submit">Submit</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </section>
   <footer>

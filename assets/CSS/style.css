@@ -1,32 +1,89 @@
-
-
 * {
     padding: 0;
     margin: 0;
     border: 0;
+    color: black;
 }
 
 #header {
     margin-top: 20px;
     height: 150px;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
 }
 
 #header-logo {
-    padding: 20, 20 , 20, 20;
     text-align: left;
     font-size: 3em;
-    
 }
 
 #header-name {
     text-align: center;
 }
 
-#links li *{
+.nav-links {
     text-decoration: none;
     color: black;
     text-decoration-style: none;
     display: inline;
+    float: right;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: inherit;
+    display: inline;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* Carousel styling by Amanda Bilderback (@abilderback) on codepen */
+
+h1.testimonials-header {
+    font-family: "Univers57-Condensed", sans-serif;
+    font-size: 18pt;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 6px;
+}
+
+section#home-reviews {
+    margin: 50px 6px 70px 6px;
+    padding: 100px 0;
+    font-family: "Univers57-Condensed", sans-serif;
+    color: #5d564f;
+    background: #f7f7f7;
+}
+
+section#home-reviews h2 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.fa-quote-left {
+    padding-right: 10px;
+}
+
+.fa-quote-right {
+    padding-left: 10px;
+}
+
+section#home-reviews p {
+    font-size: 13pt;
+}
+
+.stars {
+    color: #BB8B41;
 }
