@@ -58,32 +58,73 @@ h1.testimonials-header {
     padding: 6px;
 }
 
-section#home-reviews {
+#home-reviews {
     margin: 50px 6px 70px 6px;
     padding: 100px 0;
     font-family: "Univers57-Condensed", sans-serif;
     color: #5d564f;
     background: #f7f7f7;
+    text-align: center;
 }
 
-section#home-reviews h2 {
+#home-reviews h2 {
     font-size: 1.75rem;
     text-transform: uppercase;
-    margin-bottom: 50px;
 }
 
-.fa-quote-left {
-    padding-right: 10px;
+div i {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
-.fa-quote-right {
-    padding-left: 10px;
-}
-
-section#home-reviews p {
+#home-reviews p {
     font-size: 13pt;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
-.stars {
-    color: #BB8B41;
+.carousel-style {
+    padding-bottom: 100px !important;
+}
+
+.carousel-item p {
+    text-align: center;
+    clear: both;
+    max-width: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#carousel-inner div {
+    padding-bottom: 50px !important;
+    clear: both;
+    margin-top: auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.review-body {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
 }
