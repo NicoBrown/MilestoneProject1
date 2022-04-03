@@ -225,7 +225,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   The colour Pallette was generated [here](https://coolors.co/0b3954-bfd7ea-ff6663-e0ff4f-fefffe)
 
 ### Media
 
