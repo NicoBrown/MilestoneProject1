@@ -1,112 +1,369 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
-    color: black;
+    scrollbar-width: thin;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+  /*  Remove Scroll Bar Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar , *::-webkit-scrollbar-track, *::-webkit-scrollbar-thumb  {
+    display: none;
+  }
+
+  /*--------------------- Header Start ---------------------*/
+
+header * {
+  text-decoration: none;
 }
 
 #header {
-    margin-top: 20px;
-    height: 150px;
-    text-align: center;
-    line-height: 100px;
+    height: 75px;
+    line-height: 75px;
+    background-color:#2c2c2c;
+    opacity: 90%;  
 }
 
-#header-logo {
+#header-logo i {
+    color: #FF6663;
+}
+
+#header-logo-text * {
     text-align: left;
-    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 1.1em;
 }
 
 #header-name {
-    text-align: center;
+    line-height: 40px;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: white;
 }
-
-.nav-links {
-    text-decoration: none;
-    color: black;
-    text-decoration-style: none;
-    display: inline;
-    float: right;
+#tag-line {
+    color: #E0FF4F;
 }
 
 .nav-item {
-    text-decoration: none;
-    color: inherit;
-    display: inline;
-    text-decoration: none;
     text-decoration-style: none;
+    display: inline;
+    padding: 0 1rem;
+    float: right;
 }
 
-hr {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
+.form-inline {
+    padding: 0 1rem;
+}
+
+#sign-up-button:hover {
+    background-color: #FF6663 !important;
+}
+
+  /*--------------------- video and hero text ---------------------*/
+
+#hero-video-row video {
+    width: 100%;
+    height: 100%;
+    object-fit: initial;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #2c2c2c;
+    overflow: hidden;
+  }
+
+  #hero-text-div {
+    padding: 5%;
+    padding-bottom: 10%;
+  }
+  
+
+  .hero-text-style {
+    color: white;
+    font-size: 10em;
+    font-weight: 500;
+    font-stretch: expanded;
+    text-shadow: none;
+    text-align: left;
+    transform: skewX(-10deg);
+    text-transform: uppercase;
+  }
+
+  #try-us-button {
+    background-color: transparent;
+    color: #E0FF4F;
+    border:#E0FF4F solid 7.5px;
+    transform: skewX(-10deg);
+    padding: 0.5rem 1rem;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    padding: 10px 40px;
+  }
+
+  #scroll-button {
+    margin-top: 200px;
+    background: none;
+    color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-/* Carousel styling by Amanda Bilderback (@abilderback) on codepen */
-
-h1.testimonials-header {
-    font-family: "Univers57-Condensed", sans-serif;
-    font-size: 18pt;
-    line-height: 1.1;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding: 6px;
-}
-
-#home-reviews {
-    margin: 50px 6px 70px 6px;
-    padding: 100px 0;
-    font-family: "Univers57-Condensed", sans-serif;
-    color: #5d564f;
-    background: #f7f7f7;
-    text-align: center;
-}
-
-#home-reviews h2 {
-    font-size: 1.75rem;
-    text-transform: uppercase;
-}
-
-div i {
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-#home-reviews p {
-    font-size: 13pt;
-    text-align: center;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-.carousel-style {
-    padding-bottom: 100px !important;
-}
-
-.carousel-item p {
-    text-align: center;
+    display: block;
     clear: both;
-    max-width: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-#carousel-inner div {
-    padding-bottom: 50px !important;
-    clear: both;
-    margin-top: auto;
+  }
+  
+  #scroll-button i {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    font-size: 5em;
+    font-weight: 500;
+  }
+
+  #hero-text:first-child {
+    text-decoration: underline 14px  #E0FF4F;
+  }
+
+  #hero-text-accent {
+      color:#FF6663;
+  }
+
+  /* ---------------------Next section--------------------- */
+
+  #gym-info{
+    margin-top: 0px;
+      background-color: white;
+      padding: 0;
+      text-align: left;
+      padding-top: 125px;
+      padding-right: 30px;
+  }
+
+  #gym-info-text h2, h3 {
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+  }
+
+  #gym-info-heading-1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .banner-heading {
+    padding-top: 20%;
+    font-size: 4em;
+    font-weight: 500;
+    font-stretch: expanded;
+    text-shadow: none;
+    text-align: left;
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+
+  #top-left-card {
+    height:inherit;
+    transition: 0.4s;
+    outline: 2px solid #2c2c2c;
+    outline-offset: -1px;
+  }
+  #top-left-card:hover {
+    background-color: #FF6663;
+  }
+  #top-left-card:hover i {
+    background-color: #2c2c2c;
+    color: #FF6663;
+    padding: 5px;
+  } 
+  #top-left-card i{
+    background-color: #ff6663;
+    transition: 0.2s;
+    border-radius: 15%;
+    padding: 5px;
+  }
+
+  /* top right card */
+  #top-right-card {
+    height:inherit;
+    transition: 0.2s;
+    outline: 2px solid #2c2c2c;
+    outline-offset: -1px;
+  }
+  #top-right-card:hover {
+    background-color: #BFD7EA;
+  } 
+  #top-right-card:hover i {
+    background-color: #2c2c2c;
+    color: #BFD7EA;
+    padding: 5px;
+  } 
+  #top-right-card i{
+    background-color: #BFD7EA;
+    transition: 0.2s;
+    border-radius: 15%;
+    padding: 5px;
+  }
+  /* bottom left card */
+  #bottom-left-card {
+    height:inherit;
+    transition: 0.2s;
+    outline: 2px solid #2c2c2c;
+    outline-offset: -1px;
+  }
+  #bottom-left-card:hover {
+    background-color: #0B3954;
+    color: #ffffff;
+  }
+  #bottom-left-card:hover i {
+    background-color: #ffffff;
+    color: #0B3954;
+    padding: 5px;
+  } 
+  #bottom-left-card i{
+    background-color: #0B3954;
+    color: #ffffff;
+    transition: 0.2s;
+    border-radius: 15%;
+    padding: 5px;
+  }
+
+  /* bottom right card */
+  #bottom-right-card {
+    height:inherit;
+    transition: 0.2s;
+    outline: 2px solid #2c2c2c;
+    outline-offset: -1px;
+  }
+  #bottom-right-card:hover {
+    background-color: #E0FF4F;
+  }
+  #bottom-right-card:hover i {
+    background-color: #2c2c2c;
+    color: #E0FF4F;
+    padding: 5px;
+  } 
+  #bottom-right-card i{
+    background-color: #E0FF4F;
+    transition: 0.2s;
+    border-radius: 15%;
+    padding:5px;
+  }
+
+  .info-card {
+  min-height: 250px;
+  padding: 20px;
+  }
+
+  .info-card-i {
+    font-size: 1.5em;
+    padding: 4px;
+    background-color: #bebebe;
+    background-clip: border-box;
+  }
+
+  /*--------------------Pricing Section ---------------------*/
+
+  #pricing {
+    display: inline-block;
+    margin-top: 125px;
+    background-image: url("../Media/pexels-lukas-669576.jpg");
+    background-color: #cccccc;
+    height: 650px; 
+    background-position: center;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  #pricing-header {
+    padding-top: 30px;
+    font-size: 4em;
+    font-weight: 500;
+    font-stretch: expanded;
+    text-shadow: none;
+    text-align: center;
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+
+
+  .card {
+    display: inline-block;
+    margin: 30px;
+    margin-bottom: 50px;
+    align-content: center;
+    height: 375px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+
+  }
+
+  .card li {
+    border-bottom: #E0FF4F 1px solid;
+    margin: 3px;
+  }
+
+  .card-body button {
+    bottom:10px;
+    left: 30px;
+    right: 30px;
+    position: absolute;
+    color: #E0FF4F;
+    border:#E0FF4F solid 5px;
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-style: oblique;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .card-body button:hover {
+    position: absolute;
+    color:#FF6663;
+    border:#ff6663 solid 5px;
+  }
+
+    /*--------------------- gym about --------------------- */
+
+    #gym-location {
+      margin: 20px 0px;
+      text-align: center;
+      min-height: 500px;
+      align-items: center;
+      background-color:#bebebe;
+    }
+  
+    #gym-location div {
+      padding: 20px;
+    }
 
 .review-body {
     text-align: center;
