@@ -1,24 +1,183 @@
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+/* ------------------- Extra small devices (phones, 450px and down)-------------------  */
+@media only screen and (min-width: 1px) and (max-width: 450px) {
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+  #header, #header * {
+    visibility: hidden;
+    top: -75;
+    bottom:0;
+    position: absolute;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
-* {
+  #hero-text-div {
+    position: relative;
     padding: 0;
     margin: 0;
+    margin-top: 25%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #hero-text, #hero-text-accent, .hero-text-style h1 {
+    padding: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;    
+    align-items: center;
+    text-align: center;
+    font-size: 5em !important;
+  }
+
+  #hero-text:first-child {
+    text-decoration: underline 7px  #E0FF4F;
+  }
+
+  #try-us-button {
+    position: relative;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 50px !important;
+    border-width: 3.5px !important;
+  }
+
+  #scroll-button, #scroll-button * {
+    visibility: hidden;
+    visibility: collapse;
+  }
+
+
+}
+
+/*-------------------  Small devices (portrait tablets and large phones, 450px and up)-------------------  */
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+  #header, #header * {
+    visibility: hidden;
+    top: -75;
+    bottom:0;
+    position: absolute;
+  }
+
+  #hero-text-div {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 25%;
+  }
+
+  #hero-text-div > h1, #hero-text-accent {
+    padding: 30px;
+    font-size: 5em;
+    align-items: center;
+    text-align: center;
+  }
+
+  #try-us-button {
+    position: relative;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 50px !important;
+    border-width: 7.5px !important;
+  }
+
+  #scroll-button, #scroll-button * {
+    visibility: hidden;
+    visibility: collapse;
+  }
+
+  
+#video1 {
+  display: block;
+margin: 0 auto;
+  }
+
+}
+
+/*-------------------  Medium devices (landscape tablets, 768px and up)-------------------  */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  #header-name, #dropdown-div, #tag-line {
+  visibility: hidden;
+}
+
+#hero-text-div h1, #hero-text-accent, #try-us-button {
+  padding-top: 30px;
+  font-size: 5em;
+  margin-left: 100px;
+}
+
+#hero-text-div {
+  padding: 0;
+  margin: 0;
+  margin-top: 25%;
+}
+
+
+}
+
+/*-------------------  Large devices (laptops/desktops, 992px and up) ------------------- */
+@media only screen and (min-width: 992px) {
+
+  #dropdown-div {
+    visibility: hidden;
+  }
+
+    
+  #hero-text {
+    margin-top: 150px;
+
+  }
+
+  #hero-text-div h1, #hero-text-accent, #try-us-button {
+    padding-top: 30px;
+    font-size: 6em;
+    margin-left: 100px;
+  }
+
+}
+
+/*------------------- Extra large devices (large laptops and desktops, 1200px and up) -------------------*/
+@media only screen and (min-width: 1200px) {
+
+  #dropdown-div {
+    visibility: hidden;
+  }
+
+  
+  #hero-text {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  #hero-text-div > h1, #hero-text-accent{
+    padding-top: 50px;
+    font-size: 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  #dropdown-div {
+    visibility: hidden;
+  }
+
+  #hero-text {
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+
+  #hero-text-div > h1, #hero-text-accent {
+    font-size: 10em;
+  }
+}
+
+/*------------------- General styles -------------------*/
+
+* {
     border: 0;
-    scrollbar-width: thin;
 }
 
 .row {
@@ -38,14 +197,23 @@ header * {
 }
 
 #header {
-    height: 75px;
-    line-height: 75px;
-    background-color:#2c2c2c;
-    opacity: 90%;  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  background-color:#2c2c2c;
+  opacity: 90%;  
+  z-index: 1;
+}
+
+#dropdown-div {
+  position: fixed;
+  top: 0;
 }
 
 #header-logo i {
-    color: #FF6663;
+  color: #FF6663;
 }
 
 #header-logo-text * {
@@ -82,35 +250,28 @@ header * {
 
   /*--------------------- video and hero text ---------------------*/
 
-#hero-video-row video {
+#video1 {
     width: 100%;
     height: 100%;
-    object-fit: initial;
+    object-fit: cover;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    display: block;
+margin: 0 auto;
     z-index: -1;
     background-color: #2c2c2c;
     overflow: hidden;
   }
 
   #hero-text-div {
-    padding: 5%;
-    padding-bottom: 10%;
+    padding: 2%;
+    position: relative;
+    top: 0;
   }
-  
 
-  .hero-text-style {
-    color: white;
-    font-size: 10em;
-    font-weight: 500;
-    font-stretch: expanded;
-    text-shadow: none;
-    text-align: left;
-    transform: skewX(-10deg);
-    text-transform: uppercase;
+  #hero-text-row {
+    position: relative;
+    top: 0;
+    height: 100vh;
   }
 
   #try-us-button {
@@ -118,7 +279,6 @@ header * {
     color: #E0FF4F;
     border:#E0FF4F solid 7.5px;
     transform: skewX(-10deg);
-    padding: 0.5rem 1rem;
     font-size: 1.1em;
     font-weight: 500;
     letter-spacing: 3px;
@@ -129,38 +289,51 @@ header * {
   }
 
   #scroll-button {
-    margin-top: 200px;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    right: 50%;
     background: none;
     color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     clear: both;
   }
   
   #scroll-button i {
-    text-align: center;
     font-size: 5em;
     font-weight: 500;
   }
 
-  #hero-text:first-child {
+  .hero-text-style {
+    color: white;
+    font-weight: 500;
+    font-stretch: expanded;
+    text-shadow: none;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  #hero-text {
     text-decoration: underline 14px  #E0FF4F;
+    font-size: 3em;
+    transform: skewX(-10deg);
   }
 
   #hero-text-accent {
       color:#FF6663;
+          font-size: 3em;
+          transform: skewX(-10deg);
   }
 
   /* ---------------------Next section--------------------- */
 
-  #gym-info{
-    margin-top: 0px;
-      background-color: white;
-      padding: 0;
-      text-align: left;
-      padding-top: 125px;
-      padding-right: 30px;
+  #gym-info {
+    padding-top: 30px;
+    background-color: white;
+    padding: 0;
+    text-align: left;
+    padding-right: 30px;
+
   }
 
   #gym-info-text h2, h3 {
@@ -175,7 +348,7 @@ header * {
   }
 
   .banner-heading {
-    padding-top: 20%;
+    padding-top: 30px;
     font-size: 4em;
     font-weight: 500;
     font-stretch: expanded;
@@ -365,23 +538,56 @@ header * {
       padding: 20px;
     }
 
-.review-body {
-    text-align: center;
-    padding-top: 20px;
-    margin-left: 75px;
-    margin-right: 75px;
-}
+    /*--------------------- 
+    Map CSS code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/                      
+    --------------------- */
 
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-}
+    .map-container{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:500px;
+    }
+    .map-container iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+    }
+
+    /*--------------------- footer --------------------- */
+  #footer {
+    margin: 0;
+    background-color: #2c2c2c;
+    color: white;
+    width: 100%;
+    align-items: center;
+  }
+
+  #footer:first-of-type div > p {
+    margin-top: 55px;
+  }
+
+  #social-links {
+    height: 150px;
+    line-height: 150px;
+    background-color:#2c2c2c;
+    opacity: 90%;
+    padding: 20px;
+  }
+
+  .social-links i {
+    font-size: x-large;
+    color: #E0FF4F;
+    padding: 20px 30px;
+    padding-bottom: 0;
+    align-items: center;
+    text-align: center;
+    animation: ease-in 0.3s normal none 1 forwards linear;
+  }
+
+  #email-subscription {
+    float: right;
+  }
+
