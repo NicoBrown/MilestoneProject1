@@ -223,67 +223,74 @@
       </div>
     </div>
   </section>
-  <!-- Gallery -->
+  <!-- Gallery - initial layout taken from https://mdbootstrap.com/docs/standard/extended/gallery/ -->
   <section id="gallery">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+    <div class="row" id="gallery-container">
+      <div class="col-lg-4">
+        <img src="assets\Media\pexels-pixabay-260352.jpg" class="gallery-image" alt="Mountains in the Clouds" />
+        <img src="assets\Media\pexels-ivan-samkov-4164763.jpg" class="gallery-image" alt="Boat on Calm Water" />
       </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+      <div class="col-lg-4 col-md-12">
+        <img src="assets\Media\pexels-victor-freitas-2261485.jpg" class="gallery-image" alt="Boat on Calm Water" />
+        <img src="assets\Media\pexels-ivan-samkov-4164756.jpg" class="gallery-image" alt="Wintry Mountain Landscape" />
+        <img src="assets\Media\pexels-ivan-samkov-4164760.jpg" class="gallery-image" alt="Boat on Calm Water" />
       </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-          class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+      <div class="col-lg-4">
+        <img src="assets\Media\pexels-tima-miroshnichenko-6389079.jpg" class="gallery-image" alt="Waves at Sea" />
+        <img src="assets\Media\pexels-gleb-krasnoborov-2628215.jpg" class="gallery-image"
+          alt="Yosemite National Park" />
+        <img src="assets\Media\pexels-andrea-piacquadio-3838937.jpg" class="gallery-image"
+          alt="Yosemite National Park" />
       </div>
     </div>
   </section>
   <!-- Gallery -->
   <!-- Contact and location -->
-  <section id="contact-us"></section>
-  <div class="row" id="contact-us">
-    <div class="col-4 container">
-      <!-- first column -->
-      <div class="" id="">
-        <h2 class="">Get Social</h2>
-        <p>
-          Excercise with others, or attend our classes. Social excercise can pull you out
-          of a running funk or low mood, inspire you to try new events
-        </p>
+  <section id="contact-us">
+    <div class="row" id="contact-us">
+      <div class="col-4 container">
+        <!-- first column -->
+        <div class="contact-container">
+          <h2>Contact us</h2>
+          <i class="fa-solid fa-phone">
+            <p>Tel: 01793 919182</p>
+          </i>
+          <hr>
+          <i class="fa-solid fa-email">
+            <p>Email: info@PureFitness.co.uk</p>
+          </i>
+          <hr>
+          <i class="fa-solid fa-mail">
+            <p>Email: info@PureFitness.co.uk</p>
+          </i>
+        </div>
+      </div>
+      <div class="col-4 container">
+        <!-- Second column -->
+        <div class="contact-container">
+          <h2>Opening Hours</h2>
+          <ul>
+            <li>Mon: 6am - 10pm</li>
+            <li>Tue: 6am - 10pm</li>
+            <li>Wed: 6am - 10pm</li>
+            <li>Thu: 6am - 10pm</li>
+            <li>Fri: 6am - 10pm</li>
+            <li>Sat: 6am - 10pm</li>
+            <li>Sun: 6am - 10pm</li>
+          </ul>
+          <em>Note: Non-Members hours are 8am - 5pm daily</em>
+        </div>
+      </div>
+      <div class="col-4 container">
+        <!-- Second column -->
+        <!--Google map code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ -->
+        <div id="map-container-google" class="map-container">
+          <iframe src="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            aria-hidden="false" tabindex="0" allowfullscreen="false"></iframe>
+        </div>
+        <!--Google Maps-->
       </div>
     </div>
-    <div class="col-4 container">
-      <!-- Second column -->
-      <div class="" id="">
-        <h2 class="">Feel Strong</h2>
-        <p>
-          Weightlifting strengthens your heart by pumping blood more effectively through your body.
-        </p>
-      </div>
-    </div>
-    <div class="col-4 container">
-      <!-- Second column -->
-      <!--Google map code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ -->
-      <div id="map-container-google" class="map-container">
-        <iframe src="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-          aria-hidden="false" tabindex="0" allowfullscreen="false"></iframe>
-      </div>
-      <!--Google Maps-->
-    </div>
-  </div>
   </section>
 
   <!-- footer -->
