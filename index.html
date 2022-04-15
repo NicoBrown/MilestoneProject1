@@ -42,8 +42,9 @@
       </div>
       <!-- Start of Nav items -->
       <div class="nav col-md-6 col-lg-5 col-xl-4" id="nav">
-        <a class="nav-item text-white py-0" href="about.html">About</a>
-        <a class="nav-item text-white py-0" href="gallery.html">Gallery</a>
+        <a class="nav-item text-white py-0" href="#gym-ethos">About</a>
+        <a class="nav-item text-white py-0" href="#pricing-section">Pricing</a>
+        <a class="nav-item text-white py-0" href="#gallery">Gallery</a>
         <a class="nav-item text-white py-0" href="contact.html">Contact</a>
         <form class="form-inline nav-item">
           <button class="btn btn-outline-secondary text-white" id="sign-up-button" type="button">Sign Up</button>
@@ -60,7 +61,7 @@
         </button>
         <div class="dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item active" href="index.html">Home</a>
-          <a class="dropdown-item" href="about.html">About</a>
+          <a class="dropdown-item" href="#gym-ethos">About</a>
           <a class="dropdown-item" href="gallery.html">Gallery</a>
           <a class="dropdown-item" href="contact.html">Contact</a>
         </div>
@@ -80,13 +81,29 @@
           </h1>
         </h1>
         <button id="try-us-button" type="button">Try Us Free</button>
-        <button id="scroll-button" onClick="scrollDown()"><i class="fa-regular fa-circle-down"></i></button>
+        <div class="" id="hero-social-links">
+          <a class="social-links" target="_blank" href="http://www.faceboook.com"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a class="social-links" target="_blank" href="http://www.instagram.com"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a class="social-links" target="_blank" href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a class="social-links" target="_blank" href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="">
+          <button id="scroll-button" onClick="scrollDown()"><i class="fa-regular fa-circle-down"></i></button>
+        </div>
+        <div id="hero-address-link">
+          <a class="address-link" target="_blank" href="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc"><i
+              class="fa-solid fa-location-dot"></i>
+            <p>1 Queens Street, BS1 7DG</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <!-- Gym info -->
   <section id="gym-ethos">
-    <div class="row d.d-block" id="gym-info">
+    <div class="row" id="gym-info">
       <div class="col-md-4 col-xs-8 offset-1">
         <h3 class="gym-info-text banner-heading">Welcome to Pure Fitness</h3>
         <p class="gym-info-text">Pure Fitness is a Bristol based gym, offering a wide range of classes for all
@@ -153,15 +170,16 @@
             example. It's built with default Bootstrap components and utilities with little customization.</p>
         </div>
       </div>
+
       <div class="row">
         <div class="col-12 text-center">
-          <div class="col-2 offset-2 card mb-4 align-top box-shadow">
-            <div class="card-header border-light">
+          <div class="col-2 offset-2 card align-top">
+            <div class="card-header">
               <h4 class="my-0 font-weight-normal">Single Session</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body px-0">
               <h1 class="card-title pricing-card-title">£5 <small class="text-muted">/ visit</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="price-list-card">
                 <li>Gym use during off-peak hours</li>
                 <li>No join-up fees</li>
                 <li>Free trial before joining</li>
@@ -169,13 +187,13 @@
               <button type="button" class="btn">Get started</button>
             </div>
           </div>
-          <div class="col-2 offset-1 card align-top mb-4 box-shadow">
-            <div class="card-header border-light">
+          <div class="col-2 offset-1 card align-top">
+            <div class="card-header">
               <h4 class="my-0 font-weight-normal">Member</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body px-0">
               <h1 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="price-list-card">
                 <li>Access to gym facilities 24-Hours</li>
                 <li>£20 join-up fee</li>
                 <li>Free trial before joining</li>
@@ -184,14 +202,14 @@
               <button type="button" class="btn">Get started</button>
             </div>
           </div>
-          <div class="col-2 offset-1 card mb-4 align-top box-shadow">
-            <div class="card-header border-light">
+          <div class="col-2 offset-1 card align-top">
+            <div class="card-header">
               <h4 class="my-0 font-weight-normal">Pro Member</h4>
             </div>
-            <div class="card-body border-light">
+            <div class="card-body px-0">
               <h1 class="card-title pricing-card-title">£30 <small class="text-muted">/ mo</small>
               </h1>
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="price-list-card">
                 <li>Access to gym facilities 24-Hours</li>
                 <li>No join-up fees</li>
                 <li>Free trial before joining</li>
@@ -205,8 +223,38 @@
       </div>
     </div>
   </section>
-  <!-- Gym About-->
-  <div class="row" id="gym-location">
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+          class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+      </div>
+    </div>
+  </section>
+  <!-- Gallery -->
+  <!-- Contact and location -->
+  <section id="contact-us"></section>
+  <div class="row" id="contact-us">
     <div class="col-4 container">
       <!-- first column -->
       <div class="" id="">
@@ -271,7 +319,6 @@
       window.scrollTo(0, offset);
     }
   </script>
-
   <!--Google Maps API-->
   <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
