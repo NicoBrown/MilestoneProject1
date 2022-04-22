@@ -45,9 +45,9 @@
         <a class="nav-item text-white py-0" href="#gym-ethos">About</a>
         <a class="nav-item text-white py-0" href="#pricing-section">Pricing</a>
         <a class="nav-item text-white py-0" href="#gallery">Gallery</a>
-        <a class="nav-item text-white py-0" href="contact.html">Contact</a>
+        <a class="nav-item text-white py-0" href="#contact-us">Contact</a>
         <form class="form-inline nav-item">
-          <button class="btn btn-outline-secondary text-white" id="sign-up-button" type="button">Sign Up</button>
+          <button class="btn btn-outline-secondary sign-up-button" id="sign-up-button" type="button">Sign Up</button>
         </form>
         </ul>
       </div>
@@ -60,10 +60,11 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item active" href="index.html">Home</a>
+          <a class="dropdown-item" href="index.html">Home</a>
           <a class="dropdown-item" href="#gym-ethos">About</a>
-          <a class="dropdown-item" href="gallery.html">Gallery</a>
-          <a class="dropdown-item" href="contact.html">Contact</a>
+          <a class="dropdown-item" href="#pricing-section">Pricing</a>
+          <a class="dropdown-item" href="#gallery">Gallery</a>
+          <a class="dropdown-item" href="#contact-us">Contact</a>
         </div>
       </div>
     </div>
@@ -250,35 +251,24 @@
     <div class="row" id="contact-us">
       <div class="col-4 container">
         <!-- first column -->
-        <div class="contact-container">
+        <div class="contact-container d.inline-box">
           <h2>Contact us</h2>
-          <i class="fa-solid fa-phone">
-            <p>Tel: 01793 919182</p>
-          </i>
-          <hr>
-          <i class="fa-solid fa-email">
-            <p>Email: info@PureFitness.co.uk</p>
-          </i>
-          <hr>
-          <i class="fa-solid fa-mail">
-            <p>Email: info@PureFitness.co.uk</p>
-          </i>
+          <i class="fa-solid fa-phone"></i>
+          <p>Tel: 01793 919182</p>
+          <i class="fa-solid fa-envelope"></i>
+          <p>Email: info@PureFitness.co.uk</p>
+          <i class="fa-solid fa-at"></i>
+          <p>Social: @PureFitnessBristol</p>
         </div>
       </div>
       <div class="col-4 container">
         <!-- Second column -->
         <div class="contact-container">
-          <h2>Opening Hours</h2>
-          <ul>
-            <li>Mon: 6am - 10pm</li>
-            <li>Tue: 6am - 10pm</li>
-            <li>Wed: 6am - 10pm</li>
-            <li>Thu: 6am - 10pm</li>
-            <li>Fri: 6am - 10pm</li>
-            <li>Sat: 6am - 10pm</li>
-            <li>Sun: 6am - 10pm</li>
-          </ul>
-          <em>Note: Non-Members hours are 8am - 5pm daily</em>
+          <h3>Members Opening Hours</h3>
+          <p>Mon - Sun: 6am - 10pm</p>
+          <hr>
+          <h3>Non-Members Opening Hours</h3>
+          <p>Mon - Sun: 8am - 7pm</p>
         </div>
       </div>
       <div class="col-4 container">
@@ -307,13 +297,14 @@
           <p>© 2022 Pure Fitness Bristol, Ltd. All rights reserved.</p>
         </div>
         <div class="col-4 px-2 py-2 mx-auto">
-          <form id="email-subscription">
+          <form id="email-subscription" method="post" action="https://formdump.codeinstitute.net">
             <h5>Subscribe to our newsletter</h5>
             <p>Monthly digest of whats new and exciting from us.</p>
             <div class="d-flex w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+              <input id="newsletterEmailInput" type="email" required placeholder="Email address">
+              <button class="btn btn-outline-secondary sign-up-button" type="submit" value="submit" id="liveToastBtn"
+                onclick="checkValidity();">Subscribe</button>
             </div>
           </form>
         </div>
@@ -322,13 +313,31 @@
   </footer>
   <script>
     function scrollDown() {
-      var offset = document.getElementById('gym-info').offsetTop.valueOf() - 105;
+      var offset = document.getElementById('gym-info').offsetTop.valueOf() - 150;
       window.scrollTo(0, offset);
+    }
+  </script>
+  <!-- function code taken from https://www.w3schools.com/howto/howto_js_snackbar.asp -->
+  <script>
+    function checkValidity() {
+      event.preventDefault();
+      event.stopPropagation();
+      if (!document.getElementById("newsletterEmailInput").checkValidity()) {
+        window.alert = null;
+        delete window.alert; // true
+        window.alert("input not valid");
+        return false
+      }
+      else {
+        window.alert("Thanks for subscribing");
+        alert("Thanks for subscribing");
+        return false;
+      }
     }
   </script>
   <!--Google Maps API-->
   <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script>
   <!-- Bootstrap Imports-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

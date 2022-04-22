@@ -191,12 +191,11 @@
 
   
   #hero-text {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 100px;
   }
 
   #hero-text-div > h1, #hero-text-accent{
-    padding-top: 50px;
     font-size: 10em;
   }
 }
@@ -290,415 +289,469 @@ header * {
 
 }
 
-  :target{
-    scroll-margin-top: 75px;
-
+:target{
+  scroll-margin-top: 75px;
 }
 
 .form-inline {
     padding: 0 1rem;
 }
 
-#sign-up-button:hover {
+.sign-up-button {
+  color: #ffffff;
+}
+
+.sign-up-button:hover {
     background-color: #FF6663 !important;
 }
 
   /*--------------------- video and hero text ---------------------*/
 
 #video1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    z-index: -1;
-    overflow: hidden;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  z-index: -1;
+  overflow: hidden;
+}
 
-  #hero-text-div {
-    padding: 2%;
-    position: relative;
-    top: 0;
-  }
+#hero-text-div {
+  padding: 2%;
+  position: relative;
+  top: 0;
+}
 
-  #hero-text-row {
-    top: 0;
-    height: 100vh;
-  }
+#hero-text-row {
+  top: 0;
+  height: 100vh;
+}
 
-  #try-us-button {
-    background-color: transparent;
-    color: #E0FF4F;
-    border:#E0FF4F solid 7.5px;
-    transform: skewX(-10deg);
-    font-size: 1.1em;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    padding: 10px 40px;
-  }
+#try-us-button {
+  background-color: transparent;
+  color: #E0FF4F;
+  border:#E0FF4F solid 7.5px;
+  transform: skewX(-10deg);
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 10px 40px;
+}
 
-  #scroll-button {
-    align-self: center;
-    position: absolute;
-    bottom: 30px;
-    left:50%;
-    right: 50%;
-    background: none;
-    color: #ffffff;
-    clear: both;
-  }
-  
-  #scroll-button i {
-    font-size: 5em;
-    font-weight: 500;
-  }
+#scroll-button {
+  align-self: center;
+  position: absolute;
+  bottom: 30px;
+  left:50%;
+  right: 50%;
+  background: none;
+  color: #ffffff;
+  clear: both;
+}
 
-  .hero-text-style {
-    color: white;
-    font-weight: 500;
-    font-stretch: expanded;
-    text-shadow: none;
-    text-align: left;
-    text-transform: uppercase;
-  }
+#scroll-button i {
+  font-size: 5em;
+  font-weight: 500;
+}
 
-  #hero-text {
-    text-decoration: underline 14px  #E0FF4F;
-    font-size: 3em;
-    transform: skewX(-10deg);
-  }
+.hero-text-style {
+  color: white;
+  font-weight: 500;
+  font-stretch: expanded;
+  text-shadow: none;
+  text-align: left;
+  text-transform: uppercase;
+}
 
-  #hero-text-accent {
-      color:#FF6663;
-          font-size: 3em;
-          transform: skewX(-10deg);
-  }
+#hero-text {
+  text-decoration: underline 14px  #E0FF4F;
+  font-size: 3em;
+  transform: skewX(-10deg);
+}
 
-  #hero-social-links {
-      position: absolute;
-      bottom: 20px
-  }
-
-  #hero-address-link { 
-    right: 10px;
-    position: absolute;
-    bottom: 20px;
-    text-decoration: none;
-  }
-
-  #hero-address-link i {
-    font-size: x-large;
-    color: #E0FF4F;
-    padding-bottom: 0;
-  }
-
-  #hero-address-link p {
-    font-size: 1em;
-    color: #E0FF4F;
-    padding-bottom: 0;
-    display:inline-block;
-    margin-bottom: 0;
-  }
-
-  /* ---------------------Next section--------------------- */
-
-  #gym-info {
-    margin-top: 75px;
-    padding-top: 30px;
-    background-color: white;
-    padding: 0;
-    text-align: left;
-    padding-right: 30px;
-
-  }
-
-  #gym-info-text h2, h3 {
-      padding: 10px;
-      margin: 10px;
-      text-align: center;
-  }
-
-  #gym-info-heading-1 {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .banner-heading {
-    padding-top: 30px;
-    font-size: 4em;
-    font-weight: 500;
-    font-stretch: expanded;
-    text-shadow: none;
-    text-align: left;
-    font-style: oblique;
-    text-transform: uppercase;
-  }
-
-  #top-left-card {
-    height:inherit;
-    transition: 0.4s;
-    outline: 2px solid #2c2c2c;
-    outline-offset: -1px;
-  }
-  #top-left-card:hover {
-    background-color: #FF6663;
-  }
-  #top-left-card:hover i {
-    background-color: #2c2c2c;
-    color: #FF6663;
-    padding: 5px;
-  } 
-  #top-left-card i{
-    background-color: #ff6663;
-    transition: 0.2s;
-    border-radius: 15%;
-    padding: 5px;
-  }
-
-  /* top right card */
-  #top-right-card {
-    height:inherit;
-    transition: 0.2s;
-    outline: 2px solid #2c2c2c;
-    outline-offset: -1px;
-  }
-  #top-right-card:hover {
-    background-color: #BFD7EA;
-  } 
-  #top-right-card:hover i {
-    background-color: #2c2c2c;
-    color: #BFD7EA;
-    padding: 5px;
-  } 
-  #top-right-card i{
-    background-color: #BFD7EA;
-    transition: 0.2s;
-    border-radius: 15%;
-    padding: 5px;
-  }
-  /* bottom left card */
-  #bottom-left-card {
-    height:inherit;
-    transition: 0.2s;
-    outline: 2px solid #2c2c2c;
-    outline-offset: -1px;
-  }
-  #bottom-left-card:hover {
-    background-color: #0B3954;
-    color: #ffffff;
-  }
-  #bottom-left-card:hover i {
-    background-color: #ffffff;
-    color: #0B3954;
-    padding: 5px;
-  } 
-  #bottom-left-card i{
-    background-color: #0B3954;
-    color: #ffffff;
-    transition: 0.2s;
-    border-radius: 15%;
-    padding: 5px;
-  }
-
-  /* bottom right card */
-  #bottom-right-card {
-    height:inherit;
-    transition: 0.2s;
-    outline: 2px solid #2c2c2c;
-    outline-offset: -1px;
-  }
-  #bottom-right-card:hover {
-    background-color: #E0FF4F;
-  }
-  #bottom-right-card:hover i {
-    background-color: #2c2c2c;
-    color: #E0FF4F;
-    padding: 5px;
-  } 
-  #bottom-right-card i{
-    background-color: #E0FF4F;
-    transition: 0.2s;
-    border-radius: 15%;
-    padding:5px;
-  }
-
-  .info-card {
-  min-height: 250px;
-  padding: 20px;
-  }
-
-  .info-card-i {
-    font-size: 1.5em;
-    padding: 4px;
-    background-color: #bebebe;
-    background-clip: border-box;
-  }
-
-  /*--------------------Pricing Section ---------------------*/
-
-  #pricing {
-    display: block;
-    height:120%;
-    margin-top: 75px;
-    padding-bottom: 10%;
-    /* Background image gradient code below taken from https://stackoverflow.com/a/25816846 */
-    background-image:
-    /* top, transparent colour*/
-    linear-gradient(#dfff4faf, #0000008a ),
-    /* your image */
-    url("../Media/pexels-lukas-669576.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-
-  #pricing-header {
-    padding-top: 30px;
-    font-size: 4em;
-    font-weight: 500;
-    font-stretch: expanded;
-    text-shadow: none;
-    text-align: center;
-    font-style: oblique;
-    text-transform: uppercase;
-  }
-
-  .price-list-card {
-    padding: 0;
-    list-style: none;
-  }
-
-  .card {
-    display: inline-block;
-    margin: 30px;
-    margin-bottom: 50px;
-    align-content: center;
-    height: 110%;
-    width: 20%;
-    background-color: #ffffff;
-    color: #0B3954;
-    border: #0B3954 1px solid;
-  }
-
-  .card li {
-    border-bottom: #0B3954 1px solid;
-    margin: 10px;
-    clear: both;
-  }
-
-  .card-body button {
-    bottom:10px;
-    left: 30px;
-    right: 30px;
-    position: absolute;
-    color: #0B3954;
-    border:#0B3954 solid 5px;
-    padding: 5px;
-    font-size: 1.1em;
-    font-weight: 500;
-    font-style: oblique;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.3s;
-    clear: both;
-  }
-
-  .card-body button:hover {
+#hero-text-accent {
     color:#FF6663;
-    border:#ff6663 solid 5px;
-  }
+        font-size: 3em;
+        transform: skewX(-10deg);
+}
 
-  .gallery-image {
-    width: 97%;
-    margin-bottom: 20px;
-    position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
+#hero-social-links {
+    position: absolute;
+    bottom: 20px
+}
 
-  #gallery-container {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    padding-left: 20px;
-    filter: grayscale(50%) sepia(10%);
-    background-color: #2c2c2c;
-  }
+#hero-address-link { 
+  right: 10px;
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+}
 
-    /*--------------------- Contact and location --------------------- */
+#hero-address-link i {
+  font-size: x-large;
+  color: #E0FF4F;
+  padding-bottom: 0;
+}
 
-    #contact-us {
-      margin: 75px 0px;
-      text-align: center;
-      min-height: 500px;
-      align-items: center;
-      background-color:#bebebe;
-    }
+#hero-address-link p {
+  font-size: 1em;
+  color: #E0FF4F;
+  padding-bottom: 0;
+  display:inline-block;
+  margin-bottom: 0;
+}
 
-    .contact-container h2 {
-      line-height: 30px;
-    }
+/* ---------------------Next section--------------------- */
 
-    .contact-container i {
-      display: inline-block;
-    }
+#gym-info {
+  margin-top: 75px;
+  padding-top: 30px;
+  background-color: white;
+  padding: 0;
+  text-align: left;
+  padding-right: 30px;
 
-    /*--------------------- 
-    Map CSS code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/                      
-    --------------------- */
+}
 
-    .map-container{
-      overflow:hidden;
-      padding-bottom:56.25%;
-      position:relative;
-      height:500px;
-    }
-    .map-container iframe{
-      left:0;
-      top:0;
-      height:100%;
-      width:100%;
-      position:absolute;
-      /* filter code below taken from https://www.sean-lloyd.com/post/applying-css-filters-iframe/ */
-      filter: invert(95%);
-    }
-
-    /*--------------------- footer --------------------- */
-  #footer {
-    margin: 0;
-    background-color: #2c2c2c;
-    color: white;
-    width: 100%;
-    align-items: center;
-  }
-
-  #footer:first-of-type div > p {
-    margin-top: 55px;
-  }
-
-  #social-links {
-    height: 150px;
-    line-height: 150px;
-    background-color:#2c2c2c;
-    padding: 20px;
-  }
-
-  .social-links i {
-    font-size: x-large;
-    color: #E0FF4F;
-    padding: 20px 10px;
-    padding-bottom: 0;
-    align-items: center;
+#gym-info-text h2, h3 {
+    padding: 10px;
+    margin: 10px;
     text-align: center;
+}
+
+#gym-info-heading-1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.banner-heading {
+  padding-top: 30px;
+  font-size: 4em;
+  font-weight: 500;
+  font-stretch: expanded;
+  text-shadow: none;
+  text-align: left;
+  font-style: oblique;
+  text-transform: uppercase;
+}
+
+#top-left-card {
+  height:inherit;
+  transition: 0.4s;
+  outline: 2px solid #2c2c2c;
+  outline-offset: -1px;
+}
+#top-left-card:hover {
+  background-color: #FF6663;
+}
+#top-left-card:hover i {
+  background-color: #2c2c2c;
+  color: #FF6663;
+  padding: 5px;
+} 
+#top-left-card i{
+  background-color: #ff6663;
+  transition: 0.2s;
+  border-radius: 15%;
+  padding: 5px;
+}
+
+/* top right card */
+#top-right-card {
+  height:inherit;
+  transition: 0.2s;
+  outline: 2px solid #2c2c2c;
+  outline-offset: -1px;
+}
+#top-right-card:hover {
+  background-color: #BFD7EA;
+} 
+#top-right-card:hover i {
+  background-color: #2c2c2c;
+  color: #BFD7EA;
+  padding: 5px;
+} 
+#top-right-card i{
+  background-color: #BFD7EA;
+  transition: 0.2s;
+  border-radius: 15%;
+  padding: 5px;
+}
+/* bottom left card */
+#bottom-left-card {
+  height:inherit;
+  transition: 0.2s;
+  outline: 2px solid #2c2c2c;
+  outline-offset: -1px;
+}
+#bottom-left-card:hover {
+  background-color: #0B3954;
+  color: #ffffff;
+}
+#bottom-left-card:hover i {
+  background-color: #ffffff;
+  color: #0B3954;
+  padding: 5px;
+} 
+#bottom-left-card i{
+  background-color: #0B3954;
+  color: #ffffff;
+  transition: 0.2s;
+  border-radius: 15%;
+  padding: 5px;
+}
+
+/* bottom right card */
+#bottom-right-card {
+  height:inherit;
+  transition: 0.2s;
+  outline: 2px solid #2c2c2c;
+  outline-offset: -1px;
+}
+#bottom-right-card:hover {
+  background-color: #E0FF4F;
+}
+#bottom-right-card:hover i {
+  background-color: #2c2c2c;
+  color: #E0FF4F;
+  padding: 5px;
+} 
+#bottom-right-card i{
+  background-color: #E0FF4F;
+  transition: 0.2s;
+  border-radius: 15%;
+  padding:5px;
+}
+
+.info-card {
+min-height: 250px;
+padding: 20px;
+}
+
+.info-card-i {
+  font-size: 1.5em;
+  padding: 4px;
+  background-color: #bebebe;
+  background-clip: border-box;
+}
+
+/*--------------------Pricing Section ---------------------*/
+
+#pricing {
+  display: block;
+  height:120%;
+  margin-top: 75px;
+  padding-bottom: 10%;
+  /* Background image gradient code below taken from https://stackoverflow.com/a/25816846 */
+  background-image:
+  /* top, transparent colour*/
+  linear-gradient(#dfff4faf, #0000008a ),
+  /* your image */
+  url("../Media/pexels-lukas-669576.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#pricing-header {
+  padding-top: 30px;
+  font-size: 4em;
+  font-weight: 500;
+  font-stretch: expanded;
+  text-shadow: none;
+  text-align: center;
+  font-style: oblique;
+  text-transform: uppercase;
+}
+
+.price-list-card {
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 50px;
+  align-content: center;
+  height: 110%;
+  width: 20%;
+  background-color: #ffffff;
+  color: #0B3954;
+  border: #0B3954 1px solid;
+}
+
+.card li {
+  border-bottom: #0B3954 1px solid;
+  margin: 10px;
+  clear: both;
+}
+
+.card-body button {
+  bottom:10px;
+  left: 30px;
+  right: 30px;
+  position: absolute;
+  color: #0B3954;
+  border:#0B3954 solid 5px;
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-style: oblique;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  clear: both;
+}
+
+.card-body button:hover {
+  color:#FF6663;
+  border:#ff6663 solid 5px;
+}
+
+.gallery-image {
+  width: 97%;
+  margin-bottom: 20px;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#gallery-container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 20px;
+  filter: grayscale(50%) sepia(10%);
+  background-color: #2c2c2c;
+}
+
+  /*--------------------- Contact and location --------------------- */
+
+  #contact-us {
+    margin: 75px 0px;
+    text-align: center;
+    min-height: 500px;
+    align-items: center;
+    background-color:#bebebe;
   }
 
-  #email-subscription {
-    float: right;
+  .contact-container h2 {
+    line-height: 30px;
   }
 
+  .contact-container i {
+    display: inline-block;
+  }
+
+  /*--------------------- 
+  Map CSS code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/                      
+  --------------------- */
+
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:500px;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    /* filter code below taken from https://www.sean-lloyd.com/post/applying-css-filters-iframe/ */
+    filter: invert(95%);
+  }
+
+  /*--------------------- footer --------------------- */
+#footer {
+  margin: 0;
+  background-color: #2c2c2c;
+  color: white;
+  width: 100%;
+  align-items: center;
+}
+
+#footer:first-of-type div > p {
+  margin-top: 55px;
+}
+
+#social-links {
+  height: 150px;
+  line-height: 150px;
+  background-color:#2c2c2c;
+  padding: 20px;
+}
+
+.social-links i {
+  font-size: x-large;
+  color: #E0FF4F;
+  padding: 20px 10px;
+  padding-bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+
+#email-subscription {
+  float: right;
+}
+
+/* style code taken and adapted from https://www.w3schools.com/howto/howto_js_snackbar.asp */
+#toast {
+visibility: hidden; /* Hidden by default. Visible on click */
+min-width: 15%; /* Set a default minimum width */
+background-color: #E0FF4F; /* Black background color */
+text-align: center; /* Centered text */
+border-radius: 2px; /* Rounded borders */
+padding: 20px 10px; /* Padding */
+position: fixed; /* Sit on top of the screen */
+z-index: 1; /* Add a z-index if needed */
+left: 80%; /* Center the snackbar */
+bottom: 30px; /* 30px from the bottom */
+}
+
+#toast h4, button {
+color: #0B3954; /* White text color */
+font-size: 1em;
+display: inline-block;
+vertical-align: middle;
+}
+
+/* Show the toast when clicking on a button (class added with JavaScript) */
+#toast.show {
+visibility: visible; /* Show the toast */
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the toast in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+/* end of copied code */
