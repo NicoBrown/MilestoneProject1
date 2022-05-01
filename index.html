@@ -272,8 +272,9 @@
         <!-- Second column -->
         <!--Google map code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ -->
         <div id="map-container-google" class="map-container">
-          <iframe src="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc=&output=embed" aria-hidden="false"
-            tabindex="0"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79533.8401269888!2d-2.6607568841018376!3d51.46857502671713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1651407405828!5m2!1sen!2suk"
+            aria-hidden="false" tabindex="0"></iframe>
         </div>
         <!--Google Maps-->
       </div>
@@ -311,8 +312,15 @@
       });
     }
   </script>
-  <!--Google Maps API-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script>
+  <!-- the embedded Google map added a console warning due to a depreciated method
+  so the code below clears the console on page load. -->
+  <script>
+    window.onload = function () {
+      console.clear()
+    }
+  </script>
+  <!-- Google Maps API
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script> -->
   <!-- Bootstrap Imports-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
