@@ -2,9 +2,9 @@
 <html lang="en-GB">
 
 <head>
+  <!-- Properties and Title -->
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#2c2c2c" />
   <link rel="shortcut icon" href="/assets/Media/dumbbell-solid.svg">
@@ -16,40 +16,35 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
 
-  <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/db72c0b092.js" crossorigin="anonymous"></script>
-
   <!-- description and keywords -->
   <meta name="description" content="Pure Fitness, independent gym located in Bristol, serving all levels of fitness">
   <meta name="keywords" content="gym, fitness, classes, Bristol, weights, exercise">
 </head>
 
 <body>
-  <!-- Start of header -->
+  <!----------------------------------- Start of header section ----------------------------------->
   <header>
-    <div class="row sticky" id="header" name="header">
+    <div class="row sticky" id="header">
       <div class="col-sm-1 text-center">
-        <a href="index.html" target="_self" id="header-logo" alt="Pure fitness logo">
+        <a href="index.html" target="_self" id="header-logo" rel="next">
           <i class="fa-solid fa-dumbbell fa-2xl"></i>
         </a>
       </div>
       <div class="col-lg-6 col-md-5 col-xl-7">
-        <a href="index.html" class="text-decoration-none" target="_self" id="header-logo-text" alt="Pure fitness logo">
-          <h1 id="header-name">Pure Fitness
-            <h2 id="tag-line">Bristols best independent gym</h3>
-          </h1>
+        <a href="index.html" class="text-decoration-none" target="_self" id="header-logo-text" rel="next">
+          <h3 id="header-name">Pure Fitness</h3>
+          <h4 id="tag-line">Bristols best independent gym</h4>
         </a>
       </div>
       <!-- Start of Nav items -->
-      <div class="nav col-md-6 col-lg-5 col-xl-4" id="nav">
-        <a class="nav-item text-white py-0" href="#gym-ethos">About</a>
-        <a class="nav-item text-white py-0" href="#pricing-section">Pricing</a>
-        <a class="nav-item text-white py-0" href="#gallery">Gallery</a>
-        <a class="nav-item text-white py-0" href="#contact-us">Contact</a>
+      <div class="nav col-md-6 col-lg-5 col-xl-4" id="navbar">
+        <a class="nav-item text-white py-0" onClick="scrollDown('gym-ethos')">About</a>
+        <a class="nav-item text-white py-0" onClick="scrollDown('pricing-section')">Pricing</a>
+        <a class="nav-item text-white py-0" onClick="scrollDown('gallery')">Gallery</a>
+        <a class="nav-item text-white py-0" onClick="scrollDown('contact-us')">Contact</a>
         <form class="form-inline nav-item">
           <button class="btn btn-outline-secondary sign-up-button" id="sign-up-button" type="button">Sign Up</button>
         </form>
-        </ul>
       </div>
     </div>
     <!-- Start of dropdown menu items -->
@@ -61,26 +56,23 @@
         </button>
         <div class="dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="index.html">Home</a>
-          <a class="dropdown-item" href="#gym-ethos">About</a>
-          <a class="dropdown-item" href="#pricing-section">Pricing</a>
-          <a class="dropdown-item" href="#gallery">Gallery</a>
-          <a class="dropdown-item" href="#contact-us">Contact</a>
+          <a class="dropdown-item" onClick="scrollDown('gym-ethos')">About</a>
+          <a class="dropdown-item" onClick="scrollDown('pricing-section')">Pricing</a>
+          <a class="dropdown-item" onClick="scrollDown('gallery')">Gallery</a>
+          <a class="dropdown-item" onClick="scrollDown('contact-us')">Contact</a>
         </div>
       </div>
     </div>
   </header>
-  <!-- Hero Text -->
+  <!----------------------------------- Hero Text section ----------------------------------->
   <section id="hero-text-section">
     <div class="row" id="hero-text-row">
       <video id="video1" class="col-12" autoplay muted loop preload="auto">
-        <source src="\assets\Media\pexels-tima-miroshnichenko-combined.mp4" type="video/mp4">
+        <source src="/assets/Media/pexels-tima-miroshnichenko-combined.mp4" type="video/mp4">
       </video>
       <div class="col-12" id="hero-text-div">
-        <h1 class="hero-text-style" id="hero-text">Pure Fitness
-          <h1 class="hero-text-style" id="hero-text-accent">
-            Bristol
-          </h1>
-        </h1>
+        <h1 class="hero-text-style" id="hero-text">Pure Fitness</h1>
+        <h1 class="hero-text-style" id="hero-text-accent">Bristol</h1>
         <button id="try-us-button" type="button">Try Us Free</button>
         <div class="" id="hero-social-links">
           <a class="social-links" target="_blank" href="http://www.faceboook.com"><i
@@ -91,7 +83,7 @@
           <a class="social-links" target="_blank" href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="">
-          <button id="scroll-button" onClick="scrollDown()"><i class="fa-regular fa-circle-down"></i></button>
+          <button id="scroll-button" onClick="scrollDown('gym-info')"><i class="fa-regular fa-circle-down"></i></button>
         </div>
         <div id="hero-address-link">
           <a class="address-link" target="_blank" href="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc"><i
@@ -102,7 +94,7 @@
       </div>
     </div>
   </section>
-  <!-- Gym info -->
+  <!----------------------------------- Gym info ----------------------------------->
   <section id="gym-ethos">
     <div class="row" id="gym-info">
       <div class="col-md-4 col-xs-8 offset-1">
@@ -161,14 +153,14 @@
       </div>
     </div>
   </section>
+  <!----------------------------------- Pricing Section ----------------------------------->
   <section id="pricing-section">
     <div id="pricing">
       <div class="row">
         <div class="pricing-header offset-3 col-6 mx-auto text-center">
           <h1 id="pricing-header">Pricing</h1>
-          <p id="pricing-subtext">Quickly build an effective pricing table for your potential customers with this
-            Bootstrap
-            example. It's built with default Bootstrap components and utilities with little customization.</p>
+          <p id="pricing-subtext">We have flexible membership otions for everyone. Join us for single sessions or to get
+            the best benefits, become a Pro member</p>
         </div>
       </div>
 
@@ -179,7 +171,7 @@
               <h4 class="my-0 font-weight-normal">Single Session</h4>
             </div>
             <div class="card-body px-0">
-              <h1 class="card-title pricing-card-title">£5 <small class="text-muted">/ visit</small></h1>
+              <h2 class="card-title pricing-card-title">£5 <small class="text-muted">/ visit</small></h2>
               <ul class="price-list-card">
                 <li>Gym use during off-peak hours</li>
                 <li>No join-up fees</li>
@@ -193,7 +185,7 @@
               <h4 class="my-0 font-weight-normal">Member</h4>
             </div>
             <div class="card-body px-0">
-              <h1 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h1>
+              <h2 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h2>
               <ul class="price-list-card">
                 <li>Access to gym facilities 24-Hours</li>
                 <li>£20 join-up fee</li>
@@ -208,8 +200,8 @@
               <h4 class="my-0 font-weight-normal">Pro Member</h4>
             </div>
             <div class="card-body px-0">
-              <h1 class="card-title pricing-card-title">£30 <small class="text-muted">/ mo</small>
-              </h1>
+              <h2 class="card-title pricing-card-title">£30 <small class="text-muted">/ mo</small>
+              </h2>
               <ul class="price-list-card">
                 <li>Access to gym facilities 24-Hours</li>
                 <li>No join-up fees</li>
@@ -224,39 +216,43 @@
       </div>
     </div>
   </section>
-  <!-- Gallery - initial layout taken from https://mdbootstrap.com/docs/standard/extended/gallery/ -->
+  <!----------------------------------- Gallery - initial layout taken from https://mdbootstrap.com/docs/standard/extended/gallery/ -->
   <section id="gallery">
     <div class="row" id="gallery-container">
+      <h1 class="hero-text-style col-12" id="gallery-heading">Gym Gallery</h1>
       <div class="col-lg-4">
-        <img src="assets\Media\pexels-pixabay-260352.jpg" class="gallery-image" alt="Mountains in the Clouds" />
-        <img src="assets\Media\pexels-ivan-samkov-4164763.jpg" class="gallery-image" alt="Boat on Calm Water" />
+        <img src="assets/Media/pexels-pixabay-260352.jpg" class="gallery-image" alt="Mountains in the Clouds" />
+        <img src="assets/Media/pexels-ivan-samkov-4164763.jpg" class="gallery-image" alt="Boat on Calm Water" />
       </div>
       <div class="col-lg-4 col-md-12">
-        <img src="assets\Media\pexels-victor-freitas-2261485.jpg" class="gallery-image" alt="Boat on Calm Water" />
-        <img src="assets\Media\pexels-ivan-samkov-4164756.jpg" class="gallery-image" alt="Wintry Mountain Landscape" />
-        <img src="assets\Media\pexels-ivan-samkov-4164760.jpg" class="gallery-image" alt="Boat on Calm Water" />
+        <img src="assets/Media/pexels-victor-freitas-2261485.jpg" class="gallery-image" alt="Boat on Calm Water" />
+        <img src="assets/Media/pexels-ivan-samkov-4164756.jpg" class="gallery-image" alt="Wintry Mountain Landscape" />
+        <img src="assets/Media/pexels-ivan-samkov-4164760.jpg" class="gallery-image" alt="Boat on Calm Water" />
       </div>
       <div class="col-lg-4">
-        <img src="assets\Media\pexels-tima-miroshnichenko-6389079.jpg" class="gallery-image" alt="Waves at Sea" />
-        <img src="assets\Media\pexels-gleb-krasnoborov-2628215.jpg" class="gallery-image"
+        <img src="assets/Media/pexels-tima-miroshnichenko-6389079.jpg" class="gallery-image" alt="Waves at Sea" />
+        <img src="assets/Media/pexels-gleb-krasnoborov-2628215.jpg" class="gallery-image"
           alt="Yosemite National Park" />
-        <img src="assets\Media\pexels-andrea-piacquadio-3838937.jpg" class="gallery-image"
+        <img src="assets/Media/pexels-andrea-piacquadio-3838937.jpg" class="gallery-image"
           alt="Yosemite National Park" />
       </div>
     </div>
   </section>
-  <!-- Gallery -->
-  <!-- Contact and location -->
-  <section id="contact-us">
+  <!----------------------------------- Contact and location----------------------------------->
+  <section id="contact-section">
     <div class="row" id="contact-us">
       <div class="col-4 container">
         <!-- first column -->
-        <div class="contact-container d.inline-box">
-          <h2>Contact us</h2>
+        <h2>Contact us</h2>
+        <div class="contact-container">
           <i class="fa-solid fa-phone"></i>
           <p>Tel: 01793 919182</p>
+        </div>
+        <div class="contact-container">
           <i class="fa-solid fa-envelope"></i>
           <p>Email: info@PureFitness.co.uk</p>
+        </div>
+        <div class="contact-container">
           <i class="fa-solid fa-at"></i>
           <p>Social: @PureFitnessBristol</p>
         </div>
@@ -275,15 +271,15 @@
         <!-- Second column -->
         <!--Google map code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ -->
         <div id="map-container-google" class="map-container">
-          <iframe src="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-            aria-hidden="false" tabindex="0" allowfullscreen="false"></iframe>
+          <iframe src="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc=&output=embed" aria-hidden="false"
+            tabindex="0"></iframe>
         </div>
         <!--Google Maps-->
       </div>
     </div>
   </section>
 
-  <!-- footer -->
+  <!-----------------------------------footer Section----------------------------------->
   <footer>
     <div id="footer" class="">
       <div class="row py-2 px-2">
@@ -296,48 +292,26 @@
           <a class="social-links" target="_blank" href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
           <p>© 2022 Pure Fitness Bristol, Ltd. All rights reserved.</p>
         </div>
-        <div class="col-4 px-2 py-2 mx-auto">
-          <form id="email-subscription" method="post" action="https://formdump.codeinstitute.net">
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of whats new and exciting from us.</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletterEmailInput" type="email" required placeholder="Email address">
-              <button class="btn btn-outline-secondary sign-up-button" type="submit" value="submit" id="liveToastBtn"
-                onclick="checkValidity();">Subscribe</button>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
   </footer>
+  <!----------------------------------- Script Section ----------------------------------->
   <script>
-    function scrollDown() {
-      var offset = document.getElementById('gym-info').offsetTop.valueOf() - 150;
+    function scrollDown(id) {
+      var offset = document.getElementById(id).offsetTop.valueOf() - 75;
       window.scrollTo(0, offset);
-    }
-  </script>
-  <!-- function code taken from https://www.w3schools.com/howto/howto_js_snackbar.asp -->
-  <script>
-    function checkValidity() {
-      event.preventDefault();
-      event.stopPropagation();
-      if (!document.getElementById("newsletterEmailInput").checkValidity()) {
-        window.alert = null;
-        delete window.alert; // true
-        window.alert("input not valid");
-        return false
-      }
-      else {
-        window.alert("Thanks for subscribing");
-        alert("Thanks for subscribing");
-        return false;
-      }
+
+
+      document.querySelector(document).ready(function () {
+        document.querySelector('#navbar a').addEventListener("click", function () {
+          document.querySelector(this).parent().siblings().querySelector("a").removeClass('active');
+          document.querySelector(this).classList.add('active');
+        });
+      });
     }
   </script>
   <!--Google Maps API-->
-  <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script>
   <!-- Bootstrap Imports-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -348,6 +322,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <!-- Fontawesome Imports-->
+  <script src="https://kit.fontawesome.com/db72c0b092.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
