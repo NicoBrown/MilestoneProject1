@@ -11,7 +11,7 @@
   }
 
   #hero-text-row {
-    background: url("../Media/pexels-tima-miroshnichenko-combined_Moment.jpg");
+    background: url("../Media/video-first-frame.webp");
     position: relative;
     display: block;
     margin: 0 auto;
@@ -123,6 +123,14 @@
       background-color: #ffffff;
       background-image: none;
     }
+
+    .pricing-card-body {
+      height: 200px !important;
+    }
+
+    .price-button-div button {
+      bottom: -100px !important;
+    }
 }
 
 /*-------------------  Small devices (portrait tablets and large phones, 450px and up)-------------------  */
@@ -208,6 +216,27 @@
     #pricing {
       background-color: #ffffff;
       background-image: none;
+    }
+
+    .pricing-card {
+      display: block;
+      margin: auto;
+      margin-bottom: 50px;
+      align-content: center;
+      height: 350px !important;
+      width: 80% !important;
+    }
+    #pricing {
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    .pricing-card-body {
+      height: 200px !important;
+    }
+
+    .price-button-div button {
+      bottom: -75px !important;
     }
 
 }
@@ -626,12 +655,13 @@ margin: auto;
 #pricing {
   display: block;
   padding-bottom: 75px;
+  position: relative;
   /* Background image gradient code below taken from https://stackoverflow.com/a/25816846 */
   background-image:
   /* top, transparent colour*/
   linear-gradient( #ffffffbe ,#ffffff5d ),
   /* your image */
-  url("../Media/pexels-lukas-669576.jpg");
+  url("../Media/weight-plate-background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -652,7 +682,7 @@ margin: auto;
 }
 
 #pricing-header-div p {
-padding:30px;
+  padding:30px;
 }
 
 .price-list-card {
@@ -672,6 +702,13 @@ padding:30px;
   border: #0B3954 1px solid;
 }
 
+.pricing-card-body {
+  height: 400px;
+  position: relative;
+  display: block;
+  clear: both;
+}
+
 .pricing-card li {
   border-bottom: #0B3954 1px solid;
   margin: 10px;
@@ -680,13 +717,20 @@ padding:30px;
 
 .pricing-card-header {
   background-color: #E0FF4F;
+  padding: 20px;
 }
 
-.pricing-card-body button {
-  bottom:10px;
-  left: 30px;
-  right: 30px;
-  position: absolute;
+  .price-button-div{
+    justify-content: flex-end;
+  }
+
+  .price-button-div button {
+  display: block;
+  height: 50px;
+  width: 150px;
+  left: calc(50% - 75px);
+  bottom: 30px;
+  position:absolute;
   color: #0B3954;
   border:#0B3954 solid 5px;
   padding: 5px;
@@ -697,7 +741,6 @@ padding:30px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.3s;
-  clear: both;
 }
 
 .pricing-card-body button:hover {
