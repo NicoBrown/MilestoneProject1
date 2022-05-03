@@ -11,7 +11,7 @@
   }
 
   #hero-text-row {
-    background: url("/assets/media/video-first-frame.webp");
+    background: url("./assets/media/video-first-frame.webp");
     position: relative;
     display: block;
     margin: 0 auto;
@@ -53,7 +53,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    margin-top: 50px !important;
+    margin-top: 20px !important;
     border-width: 3.5px !important;
   }
 
@@ -85,7 +85,7 @@
   }
 
   #gym-info {
-    margin: 30px;
+    margin: 20px !important;
   }
 
   .banner-heading {
@@ -104,12 +104,9 @@
     
   #gym-info * {
     text-align: center;
+    margin: auto;
     }
 
-    .gym-info-text * {
-      align-items: center;
-      text-align: center;
-    }
 
     .pricing-card {
       display: block;
@@ -129,7 +126,7 @@
     }
 
     .price-button-div button {
-      bottom: -100px !important;
+      bottom: -70px !important;
     }
 }
 
