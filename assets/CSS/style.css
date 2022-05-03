@@ -11,7 +11,7 @@
   }
 
   #hero-text-row {
-    background: url("./assets/media/video-first-frame.webp");
+    background: url("/assets/media/video-first-frame.webp");
     position: relative;
     display: block;
     margin: 0 auto;
