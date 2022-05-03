@@ -84,6 +84,15 @@
     margin-bottom: 0;
   }
 
+  #gym-info {
+    margin: 30px;
+  }
+
+  .banner-heading {
+    padding: 0px 0px;
+    text-align: center;
+  }
+
   .info-card {
     height:100%;
     min-height: 175px;
@@ -93,8 +102,26 @@
     }
 
     
-  .info-card * {
+  #gym-info * {
     text-align: center;
+    }
+
+    .gym-info-text * {
+      align-items: center;
+      text-align: center;
+    }
+
+    .pricing-card {
+      display: block;
+      margin: auto;
+      margin-bottom: 50px;
+      align-content: center;
+      height: 350px !important;
+      width: 80% !important;
+    }
+    #pricing {
+      background-color: #ffffff;
+      background-image: none;
     }
 }
 
@@ -146,6 +173,15 @@
     font-size: 0.8em;
   }
 
+  #gym-info {
+    margin: 30px;
+  }
+
+  .banner-heading {
+    padding: 0px 0px;
+    text-align: center;
+  }
+
   .info-card {
     height: 100%;
     min-height: 175px;
@@ -157,6 +193,21 @@
     
   .info-card * {
     text-align: center;
+    }
+
+    
+    .pricing-card {
+      display: block;
+      margin: auto;
+      margin-bottom: 50px;
+      align-content: center;
+      height: 350px !important;
+      width: 80% !important;
+    }
+
+    #pricing {
+      background-color: #ffffff;
+      background-image: none;
     }
 
 }
@@ -181,7 +232,7 @@
 }
 
 #hero-social-links i {
-  padding: 10px;
+  padding: 10px 10px 0px 10px ;
 }
 
 }
@@ -309,7 +360,7 @@ header * {
 .nav-item {
     text-decoration:none;
     display: inline;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .active {
@@ -373,11 +424,10 @@ header * {
 }
 
 #scroll-button {
-  align-self: center;
   position: absolute;
-  bottom: 30px;
-  left:50%;
-  right: 50%;
+  bottom: 20px;
+  left:45%;
+  right: 55%;
   background: none;
   color: #ffffff;
   clear: both;
@@ -411,11 +461,11 @@ header * {
 
 #hero-social-links {
     position: absolute;
-    bottom: 20px
+    bottom: 20px !important;
 }
 
 #hero-address-link { 
-  right: 10px;
+  right: 30px;
   position: absolute;
   bottom: 20px;
 }
@@ -436,31 +486,29 @@ header * {
   margin-bottom: 0;
 }
 
-/* ---------------------Next section--------------------- */
+/* ---------------------Gym information section--------------------- */
 
 #gym-info {
-  margin-top: 75px;
-  padding-top: 30px;
+  margin: 75px 30px 75px 30px;
   background-color: white;
-  padding: 0;
   text-align: left;
-  padding-right: 30px;
-
 }
 
-#gym-info-text h2, h3 {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+.gym-info-text {
+    margin: 30px;
 }
 
 #gym-info-heading-1 {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 30px;
+}
+
+#gym-info-card-container{
+  right:30px
 }
 
 .banner-heading {
-  padding-top: 30px;
+  padding: 30px 0px;
   font-size: 4em;
   font-weight: 500;
   font-stretch: expanded;
@@ -468,6 +516,8 @@ header * {
   text-align: left;
   font-style: oblique;
   text-transform: uppercase;
+  text-decoration: underline 14px  #0B3954;
+  text-underline-offset: 0.1em;
 }
 
 #top-left-card {
@@ -560,7 +610,7 @@ header * {
 
 .info-card {
 min-height: 100%;
-padding: 20px;
+padding: 10px;
 margin: auto;
 }
 
@@ -575,13 +625,11 @@ margin: auto;
 
 #pricing {
   display: block;
-  height:120%;
-  margin-top: 75px;
-  padding-bottom: 10%;
+  padding-bottom: 75px;
   /* Background image gradient code below taken from https://stackoverflow.com/a/25816846 */
   background-image:
   /* top, transparent colour*/
-  linear-gradient(#dfff4faf, #0000008a ),
+  linear-gradient( #ffffffbe ,#ffffff5d ),
   /* your image */
   url("../Media/pexels-lukas-669576.jpg");
   background-position: center;
@@ -591,7 +639,9 @@ margin: auto;
 }
 
 #pricing-header {
+  text-decoration: underline 14px  #E0FF4F;
   padding-top: 30px;
+  color:#0B3954;
   font-size: 4em;
   font-weight: 500;
   font-stretch: expanded;
@@ -601,30 +651,38 @@ margin: auto;
   text-transform: uppercase;
 }
 
+#pricing-header-div p {
+padding:30px;
+}
+
 .price-list-card {
   padding: 0;
   list-style: none;
 }
 
-.card {
+.pricing-card {
   display: inline-block;
   margin: 30px;
   margin-bottom: 50px;
   align-content: center;
-  height: 110%;
-  width: 20%;
+  height: 450px;
+  width: 25%;
   background-color: #ffffff;
   color: #0B3954;
   border: #0B3954 1px solid;
 }
 
-.card li {
+.pricing-card li {
   border-bottom: #0B3954 1px solid;
   margin: 10px;
   clear: both;
 }
 
-.card-body button {
+.pricing-card-header {
+  background-color: #E0FF4F;
+}
+
+.pricing-card-body button {
   bottom:10px;
   left: 30px;
   right: 30px;
@@ -642,7 +700,7 @@ margin: auto;
   clear: both;
 }
 
-.card-body button:hover {
+.pricing-card-body button:hover {
   color:#FF6663;
   border:#ff6663 solid 5px;
 }
@@ -677,15 +735,52 @@ margin: auto;
   /*--------------------- Contact and location --------------------- */
 
   #contact-us {
-    margin: 75px 0px;
     text-align: center;
-    min-height: 500px;
     align-items: center;
-    background-color:#bebebe;
   }
 
-  .contact-container h2 i{
+  #contact-us {
+    background-color:#ffffff;
+  }
+
+  .contact-container p {
     display: inline;
+    padding: 10px;
+    font-weight: 500;
+  }
+  .contact-container i {
+    display: inline;
+    color: #FF6663; 
+  }
+
+  .contact-container h2 {
+    text-decoration: underline 14px  #E0FF4F;
+    text-underline-offset: 0.1em;
+    font-size: 4em;
+    transform: skewX(-10deg);
+    text-align: center;
+  }
+
+  .opening-hours{
+    margin-bottom: 30px;
+  }
+
+  .opening-hours p {
+    display: inline;
+    padding: 10px;
+    font-weight: 500;
+  }
+  .opening-hours i {
+    display: inline;
+    color: #FF6663; 
+  }
+
+  .opening-hours h3 {
+    text-decoration: underline 7px  #E0FF4F;
+    text-underline-offset: 0.2em;
+    font-size: 2em;
+    transform: skewX(-10deg);
+    text-align: center;
   }
 
 
@@ -694,17 +789,21 @@ margin: auto;
   --------------------- */
 
   .map-container{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:500px;
+  }
+
+  #map-column{
+    height: inherit;
+    display: initial;
   }
   .map-container iframe{
     left:0;
     top:0;
+    bottom: 0;
+    right: 0;
+    min-height: 600px;
     height:100%;
     width:100%;
-    position:absolute;
+    position:relative;
     /* filter code below taken from https://www.sean-lloyd.com/post/applying-css-filters-iframe/ */
     filter: invert(95%);
   }

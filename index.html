@@ -23,22 +23,22 @@
 </head>
 
 <body>
-  <!----------------------------------- Start of header section ----------------------------------->
-  <header>
+  <!-----------------Start of header section --------------------->
+  <header class="fluid-container">
     <div class="row sticky" id="header">
-      <div class="col-sm-1 text-center">
+      <div class="col-1 text-center">
         <a href="index.html" target="_self" id="header-logo" rel="next">
           <i class="fa-solid fa-dumbbell fa-2xl"></i>
         </a>
       </div>
-      <div class="col-lg-6 col-md-5 col-xl-7">
+      <div class="col-4">
         <a href="index.html" class="text-decoration-none" target="_self" id="header-logo-text" rel="next">
           <h3 id="header-name">Pure Fitness</h3>
           <h4 id="tag-line">Bristols best independent gym</h4>
         </a>
       </div>
       <!-- Start of Nav items -->
-      <div class="nav col-md-6 col-lg-5 col-xl-4" id="navbar">
+      <div class="nav col-6" id="navbar">
         <a class="nav-item text-white py-0" onClick="scrollDown('gym-ethos')">About</a>
         <a class="nav-item text-white py-0" onClick="scrollDown('pricing-section')">Pricing</a>
         <a class="nav-item text-white py-0" onClick="scrollDown('gallery')">Gallery</a>
@@ -65,23 +65,25 @@
       </div>
     </div>
   </header>
-  <!----------------------------------- Hero Text section ----------------------------------->
-  <section id="hero-text-section">
+  <!--------------- Hero Text section ------------->
+  <section id="hero-text-section" clas="fluid-container">
     <div class="row" id="hero-text-row">
       <video id="video1" class="col-12" autoplay muted loop preload="auto">
-        <source src="/assets/Media/pexels-tima-miroshnichenko-combined.mp4" type="video/mp4">
+        <source src="./assets/Media/pexels-tima-miroshnichenko-combined.mp4" type="video/mp4">
       </video>
       <div class="col-12" id="hero-text-div">
         <h1 class="hero-text-style" id="hero-text">Pure Fitness</h1>
         <h1 class="hero-text-style" id="hero-text-accent">Bristol</h1>
         <button id="try-us-button" type="button">Try Us Free</button>
         <div class="" id="hero-social-links">
-          <a class="social-links" target="_blank" href="http://www.faceboook.com"><i
-              class="fa-brands fa-facebook"></i></a>
-          <a class="social-links" target="_blank" href="http://www.instagram.com"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a class="social-links" target="_blank" href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-          <a class="social-links" target="_blank" href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-links" target="_blank" href="http://www.faceboook.com"><i class="fa-brands fa-facebook"
+              aria-label="Like our facebook page (opens in new tab)"></i></a>
+          <a class="social-links" target="_blank" href="http://www.instagram.com"><i class="fa-brands fa-instagram"
+              aria-label="Follow our Instagram page (opens in new tab)"></i></a>
+          <a class="social-links" target="_blank" href="http://www.twitter.com"
+            aria-label="Follow our Twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+          <a class="social-links" target="_blank" href="http://www.youtube.com"
+            aria-label="See us on youtube (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="">
           <button id="scroll-button" onClick="scrollDown('gym-info')"><i class="fa-regular fa-circle-down"></i></button>
@@ -95,16 +97,21 @@
       </div>
     </div>
   </section>
-  <!----------------------------------- Gym info ----------------------------------->
-  <section id="gym-ethos">
+  <!------------------- Gym info -------------------->
+  <section id="gym-ethos" class="fluid-container">
     <div class="row" id="gym-info">
-      <div class="col-md-4 col-xs-8 offset-1">
+      <div class="col-md-6 col-xs-12 gx-0">
         <h3 class="gym-info-text banner-heading">Welcome to Pure Fitness</h3>
-        <p class="gym-info-text">Pure Fitness is a Bristol based gym, offering a wide range of classes for all
-          levels of fitness. Contact us for a tour of the gym and free session.</p>
+        <p class="gym-info-text">Pure Fitness is a Bristol based gym, offering a wide range of excercise equipment and
+          free weights.
+          <br><br>
+          We have daily classes for all levels of fitness.
+          <br><br>
+          Contact us for a tour of the gym and free session.
+        </p>
       </div>
       <!-- overall column -->
-      <div class="col-md-6 col-xs-10 offset-1">
+      <div class="col-md-6 col-xs-12" id="gym-info-card-container">
         <!-- Top row -->
         <div class="row">
           <div class="col-md-6 col-xs-10">
@@ -154,24 +161,23 @@
       </div>
     </div>
   </section>
-  <!----------------------------------- Pricing Section ----------------------------------->
-  <section id="pricing-section">
+  <!------------------- Pricing Section ----------------->
+  <section id="pricing-section" class="fluid-container">
     <div id="pricing">
       <div class="row">
-        <div class="pricing-header offset-3 col-6 mx-auto text-center">
+        <div class=" col-12 mx-auto text-center" id="pricing-header-div">
           <h1 id="pricing-header">Pricing</h1>
           <p id="pricing-subtext">We have flexible membership otions for everyone. Join us for single sessions or to get
             the best benefits, become a Pro member</p>
         </div>
       </div>
-
       <div class="row">
         <div class="col-12 text-center">
-          <div class="col-2 offset-2 card align-top">
-            <div class="card-header">
+          <div class="col-xs-10 col-sm-2 pricing-card align-top">
+            <div class="pricing-card-header">
               <h4 class="my-0 font-weight-normal">Single Session</h4>
             </div>
-            <div class="card-body px-0">
+            <div class="pricing-card-body px-0">
               <h2 class="card-title pricing-card-title">£5 <small class="text-muted">/ visit</small></h2>
               <ul class="price-list-card">
                 <li>Gym use during off-peak hours</li>
@@ -181,11 +187,11 @@
               <button type="button" class="btn">Get started</button>
             </div>
           </div>
-          <div class="col-2 offset-1 card align-top">
-            <div class="card-header">
+          <div class="col-sm-10 col-2 pricing-card align-top">
+            <div class="pricing-card-header">
               <h4 class="my-0 font-weight-normal">Member</h4>
             </div>
-            <div class="card-body px-0">
+            <div class="pricing-card-body px-0">
               <h2 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h2>
               <ul class="price-list-card">
                 <li>Access to gym facilities 24-Hours</li>
@@ -196,11 +202,11 @@
               <button type="button" class="btn">Get started</button>
             </div>
           </div>
-          <div class="col-2 offset-1 card align-top">
-            <div class="card-header">
+          <div class="col-sm-10 col-2 pricing-card align-top">
+            <div class="pricing-card-header">
               <h4 class="my-0 font-weight-normal">Pro Member</h4>
             </div>
-            <div class="card-body px-0">
+            <div class="pricing-card-body px-0">
               <h2 class="card-title pricing-card-title">£30 <small class="text-muted">/ mo</small>
               </h2>
               <ul class="price-list-card">
@@ -217,15 +223,15 @@
       </div>
     </div>
   </section>
-  <!----------------------------------- Gallery - initial layout taken from https://mdbootstrap.com/docs/standard/extended/gallery/ -->
-  <section id="gallery">
+  <!-------Gallery - initial layout taken from https://mdbootstrap.com/docs/standard/extended/gallery/ -->
+  <section id="gallery" class="fluid-container">
     <div class="row" id="gallery-container">
       <h1 class="hero-text-style col-12" id="gallery-heading">Gym Gallery</h1>
       <div class="col-lg-4">
         <img src="assets/Media/pexels-pixabay-260352.jpg" class="gallery-image" alt="Mountains in the Clouds" />
         <img src="assets/Media/pexels-ivan-samkov-4164763.jpg" class="gallery-image" alt="Boat on Calm Water" />
       </div>
-      <div class="col-lg-4 col-md-12">
+      <div class="col-lg-4">
         <img src="assets/Media/pexels-victor-freitas-2261485.jpg" class="gallery-image" alt="Boat on Calm Water" />
         <img src="assets/Media/pexels-ivan-samkov-4164756.jpg" class="gallery-image" alt="Wintry Mountain Landscape" />
         <img src="assets/Media/pexels-ivan-samkov-4164760.jpg" class="gallery-image" alt="Boat on Calm Water" />
@@ -239,36 +245,34 @@
       </div>
     </div>
   </section>
-  <!----------------------------------- Contact and location----------------------------------->
-  <section id="contact-section">
-    <div class="row" id="contact-us">
-      <div class="col-4 container">
+  <!----------------- Contact and location------------------>
+  <section id="contact-section" class="fluid-container">
+    <div class="row mx-0" id="contact-us">
+      <div class="col-md-6">
         <!-- first column -->
-        <h2>Contact us</h2>
         <div class="contact-container">
+          <h2>Contact Us</h2>
+          <br><br>
           <i class="fa-solid fa-phone"></i>
           <p>Tel: 01793 919182</p>
-        </div>
-        <div class="contact-container">
+          <br><br>
           <i class="fa-solid fa-envelope"></i>
           <p>Email: info@PureFitness.co.uk</p>
-        </div>
-        <div class="contact-container">
+          <br><br>
           <i class="fa-solid fa-at"></i>
           <p>Social: @PureFitnessBristol</p>
         </div>
-      </div>
-      <div class="col-4 container">
-        <!-- Second column -->
-        <div class="contact-container">
+        <hr>
+        <div class="opening-hours">
           <h3>Members Opening Hours</h3>
-          <p>Mon - Sun: 6am - 10pm</p>
-          <hr>
+          <p>Mon - Sun: open 24 Hours</p>
+          <br><br>
           <h3>Non-Members Opening Hours</h3>
-          <p>Mon - Sun: 8am - 7pm</p>
+          <p>No access during peak times:<br>
+            Between 7am - 9am and 4pm - 6:30pm daily</p>
         </div>
       </div>
-      <div class="col-4 container">
+      <div class="col-md-6" id="map-column">
         <!-- Second column -->
         <!--Google map code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ -->
         <div id="map-container-google" class="map-container">
@@ -280,29 +284,29 @@
       </div>
     </div>
   </section>
-
-  <!-----------------------------------footer Section----------------------------------->
+  <!-------------------footer Section-------------------->
   <footer>
-    <div id="footer" class="">
+    <div id="footer" class="fluid-container">
       <div class="row py-2 px-2">
         <div class="col-4 offset-4 justify-content-center align-items-center text-center">
-          <a class="social-links" target="_blank" href="http://www.faceboook.com"><i
-              class="fa-brands fa-facebook"></i></a>
-          <a class="social-links" target="_blank" href="http://www.instagram.com"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a class="social-links" target="_blank" href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-          <a class="social-links" target="_blank" href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-links" target="_blank" href="http://www.faceboook.com"><i class="fa-brands fa-facebook"
+              aria-label="Like our facebook page (opens in new tab)"></i></a>
+          <a class="social-links" target="_blank" href="http://www.instagram.com"><i class="fa-brands fa-instagram"
+              aria-label="Follow our Instagram page (opens in new tab)"></i></a>
+          <a class="social-links" target="_blank" href="http://www.twitter.com"
+            aria-label="Follow our Twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+          <a class="social-links" target="_blank" href="http://www.youtube.com"
+            aria-label="See us on youtube (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
           <p>© 2022 Pure Fitness Bristol, Ltd. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
-  <!----------------------------------- Script Section ----------------------------------->
+  <!-------------------Script Section ----------------->
   <script>
     function scrollDown(id) {
       var offset = document.getElementById(id).offsetTop.valueOf() - 75;
       window.scrollTo(0, offset);
-
 
       document.querySelector(document).ready(function () {
         document.querySelector('#navbar a').addEventListener("click", function () {
@@ -319,9 +323,7 @@
       console.clear()
     }
   </script>
-  <!-- Google Maps API
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script> -->
-  <!-- Bootstrap Imports-->
+  <!-- Bootstrap, javascript and JQ`uery Imports-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
