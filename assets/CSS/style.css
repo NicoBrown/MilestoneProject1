@@ -11,7 +11,7 @@
   }
 
   #hero-text-row {
-    background: url("../Media/video-first-frame.webp");
+    background: url("/assets/media/video-first-frame.webp");
     position: relative;
     display: block;
     margin: 0 auto;
@@ -830,10 +830,6 @@ margin: auto;
   /*--------------------- 
   Map CSS code taken from https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/                      
   --------------------- */
-
-  .map-container{
-  }
-
   #map-column{
     height: inherit;
     display: initial;
