@@ -6,11 +6,28 @@
   <a href="../commits/main" target="_self"><img alt="GitHub commits" src="https://img.shields.io/github/commit-activity/y/nicobrown/milestoneproject1"></a>
   <a href="../licence.md" target="_self"><img alt="Licence" src="https://img.shields.io/github/license/NicoBrown/MilestoneProject1"></a>
 </div>
+<br> 
+<div align="center">
+[View the live project here.](https://nicobrown.github.io/MilestoneProject1/)
 
+<hr>
+<br>  
+  
+![image](https://user-images.githubusercontent.com/86722075/166667697-200ee409-935c-4eac-9c13-fb0280ccbfbd.png)
+</div>
+<br> 
 
-[View the live project here.](https://github.com/NicoBrown/MilestoneProject1)
+## Introduction
 
-This is the website for a fictional gym business. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for customers.
+This is the website for a fictional gym business, the purpose of the webiste is to give information to members on the gym location, pricing and facilities. The site was developed using HTML and CSS and is responsive on a range of devices, making it easy to navigate for customers.
+
+## Design
+
+The site colour palette was chosen to be bold with colour primarily being used for icons and highlights throughout the site.
+<br>
+![image](https://user-images.githubusercontent.com/86722075/166670226-3a68b168-850d-4d2c-a788-128dcf1c0b1c.png)
+<br>
+The colour choices can be seen here on [Coloors.](https://coolors.co/0b3954-bfd7ea-ff6663-e0ff4f-fefffe) 
 
 ## User Experience (UX)
 
