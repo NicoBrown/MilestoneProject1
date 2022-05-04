@@ -1,5 +1,4 @@
 
-
 /* ------------------- Extra small devices (phones, 450px and down)-------------------  */
 @media only screen and (min-width: 1px) and (max-width: 450px) {
 
@@ -48,13 +47,7 @@
   }
 
   #try-us-button {
-    position: relative;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin-top: 20px !important;
-    border-width: 3.5px !important;
+display: none;
   }
 
   #scroll-button, #scroll-button * {
@@ -154,11 +147,10 @@
   }
 
   #try-us-button {
-    position: relative;
     align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding: 5px;
+    z-index: 1000;
     margin-top: 50px !important;
     border-width: 7.5px !important;
   }
@@ -241,7 +233,7 @@
 /*-------------------  Medium devices (landscape tablets, 768px and up)-------------------  */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
-  #header-name, #dropdown-div, #tag-line {
+  #header-name, #dropdown-nav-div, #tag-line, #nav {
   visibility: hidden;
 }
 
@@ -266,7 +258,7 @@
 /*-------------------  Large devices (laptops/desktops, 992px and up) ------------------- */
 @media only screen and (min-width: 992px) {
 
-  #dropdown-div {
+  #dropdown-nav-div {
     visibility: hidden;
   }
 
@@ -287,7 +279,7 @@
 /*------------------- Extra large devices (large laptops and desktops, 1200px and up) -------------------*/
 @media only screen and (min-width: 1200px) {
 
-  #dropdown-div {
+  #dropdown-nav-div {
     visibility: hidden;
   }
 
@@ -304,7 +296,7 @@
 
 @media only screen and (min-width: 1600px) {
 
-  #dropdown-div {
+  #dropdown-nav-div {
     visibility: hidden;
   }
 
@@ -334,10 +326,27 @@
     display: none;
   }
 
+  /*------------------- Modal -------------------*/
+  #successMessage {
+    z-index: 100;
+    margin: 0 auto ;
+    width: 50%;
+    align-self: center;
+    left: 25%;
+    position: fixed;
+    margin-top: 100px;
+    border: 5px #E0FF4F;
+    text-align: center;
+    font-weight: 500;
+  }
   /*--------------------- Header Start ---------------------*/
 
 header * {
   text-decoration: none;
+}
+#header-container {
+  top: -54px;
+  position: absolute;
 }
 
 #header {
@@ -350,9 +359,10 @@ header * {
   z-index: 1;
 }
 
-#dropdown-div {
+#dropdown-nav-div {
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 #header-logo i {
@@ -415,7 +425,7 @@ header * {
 
 #video1 {
   width: 100%;
-  height: 100%;
+  height: calc(100%);
   object-fit: cover;
   position: absolute;
   display: block;
@@ -432,7 +442,7 @@ header * {
 
 #hero-text-row {
   top: 0;
-  height: 100vh;
+  height: calc(100vh);
 }
 
 #try-us-button {

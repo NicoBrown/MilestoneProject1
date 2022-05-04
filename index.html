@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#2c2c2c" />
   <link rel="shortcut icon" href="./assets/Media/dumbbell-solid.svg">
-  <link rel="preload" as="image" href="/assets/media/video-first-frame.webp">
+  <link rel="preload" as="image" href="./assets/media/video-first-frame.webp">
   <title>Pure Fitness | Gym | Bristol</title>
 
   <!-- StyleSheets -->
@@ -24,8 +24,50 @@
 </head>
 
 <body>
+  <!-----------------Start of Modal form --------------------->
+  <!-- modal taken from https://getbootstrap.com/docs/5.1/components/modal/ -->
+  <div id="successMessage">
+  </div>
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="ModalContactForm" aria-hidden="true"
+    role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-toggle="modal" data-target="#exampleModal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Enter your message below:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"
+            id="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-----------------Start of header section --------------------->
-  <header class="fluid-container">
+  <header class="fluid-container" id="header-container">
     <div class="row sticky" id="header">
       <div class="col-1 text-center">
         <a href="index.html" target="_self" id="header-logo" rel="next" aria-label="Pure fitness Logo and home link">
@@ -40,7 +82,7 @@
         </a>
       </div>
       <!-- Start of Nav items -->
-      <div id="nav" class="nav col-6" id="navbar">
+      <div class="nav col-7" id="navbar">
         <a class="nav-item text-white py-0" onClick="scrollDown('gym-ethos')"
           aria-label="navigate to our gym about">About</a>
         <a class="nav-item text-white py-0" onClick="scrollDown('pricing-section')"
@@ -50,14 +92,15 @@
         <a class="nav-item text-white py-0" onClick="scrollDown('contact-us')"
           aria-label="navigate to our contact information">Contact</a>
         <form class="form-inline nav-item">
-          <button class="btn btn-outline-secondary sign-up-button" id="sign-up-button" type="button">Sign Up</button>
+          <button class="btn btn-outline-secondary sign-up-button" id="sign-up-button" type="button" data-toggle="modal"
+            data-target="#exampleModal">Sign Up</button>
         </form>
       </div>
     </div>
     <!-- Start of dropdown menu items -->
     <div class="dropdown show" id="dropdown-nav-div">
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle m-2" type="button" id="dropdown-Menu-Button"
+        <button class="btn btn-secondary dropdown-toggle m-2" type="button" id="dropdownMenuButton"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="drop down navigation menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -83,7 +126,8 @@
       <div class="col-12" id="hero-text-div">
         <h1 class="hero-text-style" id="hero-text">Pure Fitness</h1>
         <h1 class="hero-text-style" id="hero-text-accent">Bristol</h1>
-        <button id="try-us-button" type="button">Try Us Free</button>
+        <button id="try-us-button" type="button" data-toggle="modal" data-target="#exampleModal">Try Us
+          Free</button>
         <div class="" id="hero-social-links">
           <a id="facebook-link-hero" class="social-links" target="_blank" aria-label="Pure Fitness facebook page"
             href="http://www.faceboook.com" aria-label="Like our facebook page (opens in new tab)"><i
@@ -198,7 +242,7 @@
                 <li>Free trial before joining</li>
               </ul>
               <div class="price-button-div">
-                <button type="button" class="btn">Get Started</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Get Started</button>
               </div>
             </div>
           </div>
@@ -215,7 +259,7 @@
                 <li>First fitness assessment free</li>
               </ul>
               <div class="price-button-div">
-                <button type="button" class="btn">Get Started</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Get Started</button>
               </div>
             </div>
           </div>
@@ -234,7 +278,7 @@
                 <li>Free sports water dispensers</li>
               </ul>
               <div class="price-button-div text-center">
-                <button type="button" class="btn">Get Started</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Get Started</button>
               </div>
             </div>
           </div>
@@ -298,7 +342,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79533.8401269888!2d-2.6607568841018376!3d51.46857502671713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1651407405828!5m2!1sen!2suk"
             aria-hidden="false" tabindex="0" title="Gym location map"></iframe>
         </div>
-        <!--Google Maps-->
       </div>
     </div>
   </section>
@@ -334,22 +377,41 @@
       });
     }
   </script>
-  <!-- the embedded Google map added a console warning due to a depreciated method
+  <!--alert code taken from https://getbootstrap.com/docs/5.1/components/alerts/ -->
+  <script>
+    var alertPlaceholder = document.getElementById('successMessage')
+    var alertTrigger = document.getElementById('send-button')
+
+    function alert(message) {
+      var wrapper = document.createElement('div')
+      wrapper.innerHTML = '<div class="alert alert-dark alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button></div>'
+
+      alertPlaceholder.append(wrapper)
+    }
+
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', function () {
+        alert('Thanks for contacting us'), { passive: true }
+      })
+    }
+  </script>
+  <!-- the embedded Google map added a console warning due to a depreciated method and a preload warning for an image resource 
   so the code below clears the console on page load. -->
-  <!-- <script>
+  <script>
     window.onload = function () {
       console.clear()
     }
-  </script> -->
-  <!-- Bootstrap, javascript and JQ`uery Imports-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  </script>
+
+  <!-- Bootstrap, javascript and JQuery Imports-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <!-- Fontawesome Imports-->
   <script src="https://kit.fontawesome.com/db72c0b092.js" crossorigin="anonymous"></script>
