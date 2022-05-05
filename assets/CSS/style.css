@@ -693,7 +693,7 @@ margin: auto;
   /* top, transparent colour*/
   linear-gradient( #ffffffbe ,#ffffff5d ),
   /* your image */
-  url("../Media/weight-plate-background.webp");
+  url("../media/weight-plate-background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
