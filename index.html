@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#2c2c2c" />
   <link rel="shortcut icon" href="./assets/media/dumbbell-solid.svg">
-  <!-- <link rel="preload" as="image" href="./assets/media/video-first-frame.webp"> -->
+  <link rel="preload" as="image" href="./assets/media/videoImage.webp">
   <title>Pure Fitness | Gym | Bristol</title>
 
   <!-- StyleSheets -->
@@ -82,13 +82,10 @@
       </div>
       <!-- Start of Nav items -->
       <div class="nav col-7" id="navbar">
-        <a class="nav-item text-white py-0" onClick="scrollDown('gym-ethos')"
-          aria-label="navigate to our gym about">About</a>
-        <a class="nav-item text-white py-0" onClick="scrollDown('pricing-section')"
-          aria-label="naviagte to pricing section">Pricing</a>
-        <a class="nav-item text-white py-0" onClick="scrollDown('gallery')"
-          aria-label="navigate to our gallery">Gallery</a>
-        <a class="nav-item text-white py-0" onClick="scrollDown('contact-us')"
+        <a class="nav-item text-white py-0" href="#gym-ethos" aria-label="navigate to our gym about">About</a>
+        <a class="nav-item text-white py-0" href="#pricing-section" aria-label="naviagte to pricing section">Pricing</a>
+        <a class="nav-item text-white py-0" href="#gallery" aria-label="navigate to our gallery">Gallery</a>
+        <a class="nav-item text-white py-0" href="#contact-us"
           aria-label="navigate to our contact information">Contact</a>
         <form class="form-inline nav-item">
           <button class="btn btn-outline-secondary sign-up-button" id="sign-up-button" type="button" data-toggle="modal"
@@ -119,7 +116,7 @@
   <!--------------- Hero Text section ------------->
   <section id="hero-text-section" class="fluid-container">
     <div class="row" id="hero-text-row">
-      <img id="hero-mobile-image" class="col-12" src="./assets/media/videoImage.webp"></img>
+      <img id="hero-mobile-image" class="col-12" src="./assets/media/videoImage.webp" alt="Man doing chin-up"></img>
       <video id="video1" class="col-12" autoplay muted loop preload="auto">
         <source src="./assets/media/background-video.mp4" type="video/mp4">
       </video>
@@ -143,7 +140,8 @@
               class="fa-brands fa-youtube"></i></a>
         </div>
         <div>
-          <button id="scroll-button" onClick="scrollDown('gym-info')"><i class="fa-regular fa-circle-down"></i></button>
+          <button id="scroll-button" onClick="scrollDown('gym-info')" aria-label="scroll down to our about section"><i
+              class=" fa-regular fa-circle-down"></i></button>
         </div>
         <div id="hero-address-link">
           <a class="address-link" target="_blank" href="https://maps.google.com/maps?q=bristol&t=&z=13&ie=UTF8&iwloc"
@@ -158,7 +156,7 @@
   <section id="gym-ethos" class="fluid-container">
     <div class="row" id="gym-info">
       <div class="col-md-6 col-xs-12 gx-0">
-        <h3 class="gym-info-text banner-heading">Welcome to Pure Fitness</h3>
+        <h2 class="gym-info-text banner-heading">Welcome to Pure Fitness</h2>
         <p class="gym-info-text">Pure Fitness is a Bristol based gym, offering a wide range of excercise equipment and
           free weights.
           <br><br>
@@ -404,9 +402,8 @@
   </script>
 
   <!-- Bootstrap, javascript and JQuery Imports-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
