@@ -9,6 +9,10 @@
     position: absolute;
   }
 
+  * h1, h2 {
+    font-size: 3em !important;
+  }
+
   #hero-text-row {
     background: url("../media/video-first-frame.webp");
     position: relative;
@@ -84,6 +88,7 @@ display: none;
   .banner-heading {
     padding: 0px 0px;
     text-align: center;
+    font-size: 3em !important;
   }
 
   .info-card {
@@ -112,14 +117,20 @@ display: none;
     #pricing {
       background-color: #ffffff;
       background-image: none;
+      font-size: smaller !important;
     }
 
     .pricing-card-body {
       height: 200px !important;
+      font-size: smaller;
     }
 
     .price-button-div button {
       bottom: -70px !important;
+      scale: 80% !important;
+      font-size: smaller !important;
+      height:30px  !important;
+      line-height: 10px !important;
     }
 }
 
@@ -841,6 +852,11 @@ margin: auto;
     height: inherit;
     display: initial;
   }
+
+  #map-container-google {
+    display: flex;
+  }
+
   .map-container iframe{
     left:0;
     top:0;
