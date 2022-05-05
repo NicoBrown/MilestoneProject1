@@ -10,7 +10,7 @@
   }
 
   #hero-text-row {
-    background: url("..media/video-first-frame.webp");
+    background: url("../media/video-first-frame.webp");
     position: relative;
     display: block;
     margin: 0 auto;
